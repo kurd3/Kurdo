@@ -1,373 +1,1723 @@
 <!DOCTYPE html>
-<html lang="ku" dir="rtl" id="html-root">
+<html lang="en" dir="ltr" id="html-root">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurd0oAccounts | Cyber Gold Edition</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap');
-        body { 
-            font-family: 'Vazirmatn', sans-serif; 
-            background-color: #060504; 
-            background-image: radial-gradient(circle at 50% 0%, rgba(191, 149, 63, 0.12) 0%, transparent 60%);
-            color: #F3F4F6; 
-        }
-        .cyber-gold { background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #AA771C); }
-        .gold-text { background: linear-gradient(135deg, #FBF5B7, #BF953F, #AA771C); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .cyber-border { border: 1px solid rgba(191, 149, 63, 0.35); }
-        .cyber-glow { box-shadow: 0 0 30px rgba(191, 149, 63, 0.15), inset 0 0 15px rgba(191, 149, 63, 0.05); }
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
-        .floating { animation: float 3s ease-in-out infinite; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft iOS – Detailed Review & How to Download on iPhone & iPad</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#fff;color:#111827;overflow-x:hidden}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fff;border-bottom:1px solid #f1f5f9;position:sticky;top:0;z-index:30}
+.left-group{display:flex;align-items:center;gap:14px;position:relative}
+.menu-btn{background:none;border:none;font-size:19px;cursor:pointer;color:#111827;padding:4px 6px}
+.brand{font-weight:800;font-size:20px;color:#f43f5e;letter-spacing:-.5px;text-decoration:none}
+.lang-wrap{position:relative}
+.lang-pill{font-size:12px;font-weight:700;padding:4px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#f8fafc;cursor:pointer;color:#111827}
+.lang-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;width:190px;max-height:280px;overflow-y:auto;background:#fff;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.12);z-index:50}
+.lang-dropdown.show{display:block}
+.lang-option{width:100%;text-align:start;background:none;border:none;padding:8px 12px;font-size:13px;color:#1f2937;cursor:pointer;display:block}
+.lang-option:hover{background:#f1f5f9}
+.side-drawer{display:none;position:fixed;top:56px;left:16px;right:16px;max-width:300px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.16);padding:10px;z-index:60}
+.side-drawer.show{display:flex;flex-direction:column;gap:8px}
+.drawer-link{display:block;padding:11px 14px;border-radius:9px;text-decoration:none;font-size:13px;font-weight:700;color:#111827;background:#f8fafc;border:1px solid #f1f5f9;text-align:start}
+.drawer-link:hover{background:#f1f5f9}
+.icons{display:flex;align-items:center;gap:14px;font-size:17px;color:#1e293b}
+.icon-link{text-decoration:none;color:#1e293b}
+.container{max-width:480px;margin:0 auto;padding:0 16px 36px}
+.banner{width:100%;height:210px;object-fit:cover;display:block;margin:12px 0 18px;border-radius:4px}
+h1{font-size:26px;line-height:1.25;font-weight:700;color:#111827;margin-bottom:18px}
+h2{font-size:21px;font-weight:700;line-height:1.35;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+p,li{font-size:15px;line-height:1.65;color:#1f2937}
+.callout-blue{background:#f8fafc;border-inline-start:4px solid #1d4ed8;border-radius:0 12px 12px 0;padding:18px 16px;box-shadow:0 2px 10px rgba(0,0,0,.04);margin-bottom:20px}
+.callout-blue p{margin-bottom:14px}
+.callout-blue p:last-child{margin-bottom:0}
+.tip-box{background:#f8fafc;border-inline-start:4px solid #16a34a;border-radius:0 12px 12px 0;padding:15px 16px;margin-bottom:24px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+ul{list-style:disc;padding-inline-start:20px;margin-bottom:16px}
+li{margin-bottom:10px}
+img{width:100%;height:215px;object-fit:cover;border-radius:4px;display:block;margin-bottom:16px}
+section{margin-bottom:32px}
+.warn-full{background:#fff1f2;border-inline-start:4px solid #f43f5e;border-radius:0 12px 12px 0;padding:15px 16px;margin-bottom:24px;box-shadow:0 2px 10px rgba(0,0,0,.04);color:#9f1239}
+.strict-warn-box{background:#fff1f2;border-inline-start:4px solid #f43f5e;border-radius:0 12px 12px 0;padding:15px 16px;margin-bottom:18px;box-shadow:0 2px 10px rgba(0,0,0,.04);font-size:14.5px;line-height:1.65;color:#be123c;font-weight:700}
+.app-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin-bottom:18px;box-shadow:0 6px 20px rgba(15,23,42,.06);position:relative;overflow:hidden}
+.app-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.app-icon{width:62px;height:62px;border-radius:15px;background:#f5f3ff;border:1px solid #ddd6fe;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:32px;color:#7c3aed}
+.app-btn{display:inline-block;margin-top:8px;background:#2563eb;color:#fff;font-size:12px;font-weight:700;padding:4px 16px;border-radius:999px;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;border-top:1px solid #f1f5f9;padding-top:12px;margin-bottom:10px}
+.stat-label{font-size:10px;font-weight:700;color:#9ca3af;text-transform:uppercase}
+.stat-value{font-size:16px;font-weight:800;color:#4b5563;margin-top:2px}
+.stat-sub{font-size:11px;color:#6b7280}
+.app-footer{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#9ca3af;padding-top:4px}
+.divider{padding-bottom:12px;border-bottom:1px solid #f1f5f9;gap:10px}
+a.blue{color:#2563eb;font-weight:700;text-decoration:none}
+.btn-id-green{width:100%;border:none;border-radius:14px;padding:15px 16px;margin-bottom:12px;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;font-size:15px;font-weight:800;line-height:1.35;text-align:center;cursor:pointer;box-shadow:0 6px 16px rgba(22,163,74,.28);display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-id-blue{width:100%;border:none;border-radius:14px;padding:15px 16px;margin-bottom:26px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;font-size:15px;font-weight:800;line-height:1.35;text-align:center;cursor:pointer;box-shadow:0 6px 16px rgba(37,99,235,.28);display:flex;align-items:center;justify-content:center;gap:8px}
+
+/* صفحة الانضمام */
+.join-view-card{display:none;background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 12px 28px rgba(15,23,42,.08);margin-top:14px;margin-bottom:24px}
+.join-view-card.active{display:block}
+.join-view-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.btn-back-site{background:#f1f5f9;border:1px solid #cbd5e1;border-radius:10px;padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;color:#111827}
+.join-list{display:flex;flex-direction:column;gap:9px}
+.kurd-join-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;color:#111827;font-size:13.5px;font-weight:700;cursor:pointer;text-align:start;transition:all .2s ease}
+.kurd-join-btn.discord-btn{background:#eef2ff;border-color:#c7d2fe;color:#1e1b4b;font-weight:800}
+.kurd-join-btn.joined{background:#dcfce7;border-color:#16a34a;color:#14532d}
+.join-status{font-size:12.5px;font-weight:800;white-space:nowrap}
+.kurd-join-btn.joined .join-status{color:#15803d;font-size:13px}
+.red-account-box{display:none;margin-top:16px}
+.red-account-box.show{display:block}
+.red-account-btn{display:block;width:100%;box-sizing:border-box;text-align:center;background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;padding:14px 16px;border-radius:12px;font-size:14.5px;font-weight:800;text-decoration:none;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(220,38,38,.32)}
+
+/* صفحة الخطوات الثلاث */
+.guide-view-card{display:none;background:#ffffff;padding:20px 4px 36px;margin-top:8px}
+.guide-view-card.active{display:block}
+.guide-top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.guide-header-row{display:flex;align-items:flex-start;gap:16px;margin-bottom:26px}
+.guide-step-badge{width:46px;height:46px;border-radius:14px;background:#fdf2f8;color:#be185d;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.guide-header-text{flex:1}
+.guide-kicker{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#be185d;margin-bottom:6px}
+.guide-title{font-size:27px;line-height:1.25;font-weight:800;color:#1f2937;margin-bottom:10px}
+.guide-subtitle{font-size:15.5px;line-height:1.6;color:#6b7280}
+.guide-steps-list{display:flex;flex-direction:column;gap:16px}
+.guide-step-card{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:20px 18px;box-shadow:0 4px 16px rgba(17,24,39,.03);display:flex;align-items:flex-start;gap:15px}
+.guide-step-num{width:34px;height:34px;border-radius:10px;background:#f5f3ff;color:#7c3aed;font-weight:800;font-size:14.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.guide-step-body h3{font-size:17.5px;font-weight:800;color:#1f2937;margin-bottom:8px}
+.guide-step-body p{font-size:15px;line-height:1.65;color:#4b5563}
+.guide-step-body strong{color:#1f2937;font-weight:700}
+
+/* قسم الجلسة والنسخ تحت الخطوات */
+.session-panel{margin-top:26px;background:#fff;border:1px solid #fce7f3;border-radius:22px;padding:18px;box-shadow:0 8px 24px rgba(219,39,119,.07)}
+.session-status-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.session-active-pill{display:inline-flex;align-items:center;gap:8px;background:#dcfce7;color:#15803d;font-size:13.5px;font-weight:700;padding:8px 14px;border-radius:12px}
+.session-dot{width:8px;height:8px;border-radius:999px;background:#16a34a;display:inline-block}
+.session-timer-pill{background:#fff;border:1px solid #e5e7eb;color:#4b5563;font-size:13.5px;font-weight:700;padding:8px 14px;border-radius:12px;font-variant-numeric:tabular-nums}
+.session-notice{background:#fdf2f8;border:1px solid #fbcfe8;border-radius:16px;padding:14px;font-size:14px;line-height:1.6;color:#9d174d;font-weight:600;margin-bottom:16px}
+.cred-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:16px;margin-bottom:14px;box-shadow:0 4px 14px rgba(17,24,39,.03)}
+.cred-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.cred-card-title{font-size:17px;font-weight:800;color:#1f2937}
+.cred-card-tag{font-size:12px;font-weight:800;letter-spacing:.04em;color:#9ca3af;text-transform:uppercase}
+.cred-dots{font-size:20px;letter-spacing:6px;color:#cbd5e1;margin-bottom:14px;user-select:none}
+.cred-copy-btn{width:100%;border:none;border-radius:14px;padding:13px 16px;background:#db2777;color:#fff;font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .2s ease;font-variant-numeric:tabular-nums}
+.cred-copy-btn:hover:not(:disabled){background:#be185d}
+.cred-copy-btn:disabled{background:#e5e7eb;color:#6b7280;cursor:not-allowed}
+.session-footer-note{margin-top:8px;font-size:13.5px;line-height:1.6;color:#6b7280;font-weight:500}
+
+/* بطاقة التواصل والإشعارات أسفل الجلسة */
+.support-card{margin-top:22px;background:#f8f5fc;border:1px solid #e9e2f5;border-radius:24px;padding:24px 20px;box-shadow:0 6px 20px rgba(79,70,229,.05)}
+.support-kicker{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#db2777;margin-bottom:8px}
+.support-title{font-size:22px;line-height:1.3;font-weight:800;color:#1f2937;margin-bottom:12px}
+.support-desc{font-size:15px;line-height:1.65;color:#4b5563;margin-bottom:20px}
+.support-actions{display:flex;flex-direction:column;gap:12px}
+.btn-discord-kurd0o{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px 18px;border-radius:15px;background:#5c5ce6;color:#fff;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 6px 16px rgba(92,92,230,.25);transition:background .2s ease}
+.btn-discord-kurd0o:hover{background:#4b4bd4}
+.btn-tiktok-kurd0o{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px 18px;border-radius:15px;background:#fff;color:#1f2937;border:1.5px solid #e5e7eb;font-size:15px;font-weight:800;text-decoration:none;box-shadow:0 3px 10px rgba(17,24,39,.04);transition:background .2s ease}
+.btn-tiktok-kurd0o:hover{background:#f9fafb}
+
+/* نافذة التأكيد عند النسخ */
+.cred-modal-backdrop{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:90;align-items:center;justify-content:center;padding:16px}
+.cred-modal-backdrop.open{display:flex}
+.cred-modal-box{width:100%;max-width:380px;background:#fff;border-radius:18px;padding:20px;box-shadow:0 20px 45px rgba(0,0,0,.22)}
+.cred-modal-box h4{font-size:17px;font-weight:800;color:#111827;margin-bottom:8px}
+.cred-modal-box p{font-size:14px;line-height:1.6;color:#4b5563;margin-bottom:16px}
+.cred-modal-actions{display:flex;gap:10px;justify-content:flex-end}
+.cred-modal-cancel{border:1px solid #d1d5db;background:#fff;color:#374151;border-radius:10px;padding:9px 14px;font-size:13.5px;font-weight:700;cursor:pointer}
+.cred-modal-confirm{border:none;background:#db2777;color:#fff;border-radius:10px;padding:9px 16px;font-size:13.5px;font-weight:700;cursor:pointer}
+</style>
 </head>
-<body class="min-h-screen flex flex-col justify-between items-center p-4 selection:bg-amber-500 selection:text-black relative overflow-x-hidden">
+<body>
 
-    <!-- إشعارات حية منبثقة -->
-    <div id="live-toast" class="fixed bottom-4 left-4 right-4 max-w-xs mx-auto bg-slate-900/95 backdrop-blur border border-amber-500/40 rounded-xl p-3 shadow-2xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-500 z-50">
-        <div class="w-8 h-8 cyber-gold rounded-lg flex items-center justify-center text-slate-950 shrink-0">
-            <i class="fa-solid fa-bolt text-xs"></i>
-        </div>
-        <div class="text-right flex-1">
-            <p id="toast-title" class="text-[11px] font-bold text-amber-400">چالاکییا ڕاستەوخۆ</p>
-            <p id="toast-msg" class="text-[10px] text-slate-300">بەکارهێنەرەکی نوێ هژمارا ئایکلاود وەرگرت!</p>
-        </div>
+<header class="topbar">
+<div class="left-group">
+<button type="button" class="menu-btn" onclick="toggleDrawer(event)" aria-label="Menu">☰</button>
+<a href="#" class="brand" onclick="backToMainSiteView();return false;">Kurd0o</a>
+<div id="side-drawer" class="side-drawer" onclick="event.stopPropagation()">
+<a id="drawer-buy" class="drawer-link" href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer">Buy Apple Accounts</a>
+<a id="drawer-contact" class="drawer-link" href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer">Contact & Inquiries</a>
+</div>
+</div>
+<div class="lang-wrap">
+<button type="button" class="lang-pill" onclick="toggleLangDropdown(event)" id="lang-current">🇬🇧 EN ⌄</button>
+<div id="lang-dropdown" class="lang-dropdown" onclick="event.stopPropagation()">
+<button type="button" class="lang-option" onclick="applyLang('en')">English</button>
+<button type="button" class="lang-option" onclick="applyLang('ar')">العربية</button>
+<button type="button" class="lang-option" onclick="applyLang('ku')">کوردی (Badînî)</button>
+<button type="button" class="lang-option" onclick="applyLang('vi')">Tiếng Việt</button>
+<button type="button" class="lang-option" onclick="applyLang('tr')">Türkçe</button>
+<button type="button" class="lang-option" onclick="applyLang('fr')">Français</button>
+<button type="button" class="lang-option" onclick="applyLang('de')">Deutsch</button>
+<button type="button" class="lang-option" onclick="applyLang('es')">Español</button>
+<button type="button" class="lang-option" onclick="applyLang('ru')">Русский</button>
+<button type="button" class="lang-option" onclick="applyLang('ja')">日本語</button>
+</div>
+</div>
+<div class="icons">
+<a class="icon-link" href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" title="Telegram">👤</a>
+<a class="icon-link" href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" title="Accounts">🛒</a>
+<span>🔍</span>
+</div>
+</header>
+
+<main class="container">
+
+<!-- 1. المحتوى الرئيسي للموقع -->
+<div id="kurd0o-main-site-content">
+
+<img class="banner" src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=900&q=75" alt="Minecraft iOS">
+
+<h1 id="page-h1">Minecraft iOS – Detailed Review & How to Download on iPhone & iPad</h1>
+
+<div class="callout-blue">
+<p id="p-1">Some games you download, play for a few days, and forget. Others keep pulling you back time after time even after hundreds of hours.</p>
+<p id="p-2"><strong>Minecraft iOS</strong> is one of them.</p>
+<p id="p-3">Without needing hyper-realistic graphics or over-the-top effects, Minecraft stands out with <strong>freedom, creativity, and a vast world</strong> to explore.</p>
+</div>
+
+<section id="sec-continuation-2">
+<h2><span>🎮</span><span id="c2-title-text">What Makes Minecraft iOS So Engaging?</span></h2>
+<img src="https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Minecraft gameplay">
+<p id="c2-p1">Minecraft on iPhone and iPad brings the familiar Minecraft sandbox experience right to your mobile device.</p>
+<p id="c2-p2">The best part of the game is that it <strong>does not force players down a single fixed path</strong>. As soon as you create a world, you decide your own adventure.</p>
+<ul>
+<li id="c2-li1">🌲 Want to build a house? Start chopping trees and gathering resources.</li>
+<li id="c2-li2">🗺️ Want to explore? Gear up and hit the road.</li>
+<li id="c2-li3">💎 Want to find diamonds? Craft a pickaxe and start mining deep underground.</li>
+</ul>
+<p id="c2-p3">Or if you just want to relax, you can build a cozy house by the coast, run a farm, and enjoy the Minecraft world your own way.</p>
+</section>
+
+<section id="sec-continuation-3">
+<h2><span>🏕️</span><span id="c3-surv-title">Survival – Survival and Exploration</span></h2>
+<p id="c3-surv-p1"><strong>Survival</strong> is the best mode if you want to experience the full adventure side of Minecraft. At the start, you have almost nothing. You gather wood, find food, mine resources, and craft your first tools.</p>
+<p id="c3-surv-p2">When night falls, things get more dangerous. Zombies, Skeletons, Spiders, and especially Creepers can spawn around you, so securing a safe shelter on day one is essential.</p>
+<div class="tip-box"><p id="c3-tip-box">🔥 <strong>Beginner Tip:</strong> Don't spend your entire first day wandering too far. Prioritize wood, food, tools, and shelter before nightfall.</p></div>
+<h2><span>🏰</span><span id="c3-crea-title">Creative – Limitless Building</span></h2>
+<p id="c3-crea-p1">If Survival is about surviving the wild, <strong>Creative</strong> is like a massive sandbox for building. From simple blocks, players can create:</p>
+<ul>
+<li id="c3-crea-li1">🏙️ Modern houses, villas, and cities.</li>
+<li id="c3-crea-li2">🏰 Giant castles and fantasy builds.</li>
+</ul>
+</section>
+
+<section id="sec-continuation-4">
+<h2><span>📱</span><span id="c4-dev-title">Experience on iPhone & iPad</span></h2>
+<p id="c4-dev-p1">Minecraft has a version thoughtfully optimized for mobile devices. Moving, jumping, breaking blocks, placing blocks, and opening your inventory are all intuitive on a touch screen.</p>
+<p id="c4-dev-p2">Especially on <strong>iPad</strong>, the larger display gives a much more comfortable view, making building structures and managing inventory noticeably more accurate.</p>
+<h2><span>🧩</span><span id="c4-mkt-title">Add-On, Map and Texture Pack</span></h2>
+<p id="c4-mkt-p1">Once you've played vanilla Minecraft for a while, there are still thousands of extra items to discover through the <strong>Minecraft Marketplace</strong>:</p>
+<ul>
+<li id="c4-mkt-li1"><strong>Add-On:</strong> Adds new creatures, vehicles, items, and unique weapons.</li>
+<li id="c4-mkt-li2"><strong>Map:</strong> Play Adventure, Horror, Puzzle, or Mini Game maps.</li>
+<li id="c4-mkt-li3"><strong>Texture Pack:</strong> Completely refreshes the game's visual look, from blocks to the sky.</li>
+</ul>
+</section>
+
+<section id="sec-continuation-5">
+<div class="warn-full"><p id="c5-warn-full">⚠️ <strong>Note:</strong> If downloading content from outside (not via Marketplace), carefully check the source and compatibility with your game version to avoid errors.</p></div>
+<h2><span>🚀</span><span id="c5-sr-title">What Is the Shadowrocket App?</span></h2>
+<div class="app-card">
+<div class="app-head">
+<div style="display:flex;align-items:center;gap:12px;">
+<div class="app-icon">🚀</div>
+<div>
+<div style="font-size:18px;font-weight:800;color:#111827;line-height:1.2;">Shadowrocket</div>
+<div style="font-size:12px;color:#6b7280;margin-top:2px;">Kurd0o Store</div>
+<a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" id="c5-app-btn" class="app-btn">Open</a>
+</div>
+</div>
+<div style="font-size:44px;opacity:.14;color:#2563eb;user-select:none;">🚀</div>
+</div>
+<div class="stats">
+<div><div class="stat-label" id="c5-stat-rating-lbl">236 RATINGS</div><div class="stat-value">4,2</div><div class="stat-sub">★★★★☆</div></div>
+<div style="border-inline:1px solid #f1f5f9;"><div class="stat-label" id="c5-stat-age-lbl">AGE</div><div class="stat-value">4+</div><div class="stat-sub" id="c5-stat-age-sub">Years</div></div>
+<div><div class="stat-label" id="c5-stat-rank-lbl">CHART</div><div class="stat-value">#1</div><div class="stat-sub" id="c5-stat-rank-sub">Utilities</div></div>
+</div>
+<div class="app-footer"><span id="c5-whats-new">What's New ></span><span style="font-weight:800;font-size:15px;color:#3b82f6;">A</span></div>
+</div>
+<p id="c5-sr-p1">Along with that, we also introduce <strong>Shadowrocket</strong> – an essential Utilities app for users in the Apple ecosystem.</p>
+<p id="c5-sr-p2">It is a <strong>rule-based proxy utility</strong> that helps you manage network connections based on configuration rules. Key highlights:</p>
+<ul>
+<li id="c5-sr-li1">🔒 Flexible network traffic management (Domain, CIDR, GeoIP...).</li>
+<li id="c5-sr-li2">📊 Real-time network traffic monitoring.</li>
+<li id="c6-sr-li1">🌐 Modern DNS support (DNS over HTTPS/TLS).</li>
+<li id="c6-sr-li2">📲 Multi-platform support: iPhone, iPad, Mac, and Apple TV (requires iOS 13.0+).</li>
+</ul>
+</section>
+
+<section id="sec-continuation-6">
+<h2 class="divider"><span>🛒</span><span id="c6-id-title">Get Free Game & App IDs (Or Buy Licensed Access)</span></h2>
+<p id="c6-id-p1">Want to try <strong>Minecraft</strong> right away or download the <strong>Shadowrocket</strong> tool? Use the accounts shared free daily from Kurd0o, or buy a licensed account at <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Shop Kurd0o</a> to own it permanently.</p>
+</section>
+
+<section id="sec-free-id-gateway">
+<img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=900&q=75" alt="Minecraft Adventure">
+
+<button type="button" class="btn-id-green" onclick="openJoinPageView('minecraft')">
+<span>🍏</span>
+<span id="btn-mc-free">GET FREE MINECRAFT DOWNLOAD ID</span>
+</button>
+
+<button type="button" class="btn-id-blue" onclick="openJoinPageView('shadowrocket')">
+<span>🚀</span>
+<span id="btn-sr-free">GET FREE SHADOWROCKET DOWNLOAD ID</span>
+</button>
+
+<h2 class="divider"><span>🛡️</span><span id="guide-appstore-title">Safe App Store Sign-In Guide</span></h2>
+
+<div class="strict-warn-box">
+<p id="strict-id-warning">SPECIAL NOTE: WHEN USING A SHARED ID, NEVER SIGN IN TO DEVICE SETTINGS (ICLOUD). SIGN IN ONLY IN THE APP STORE! SIGN OUT IMMEDIATELY AFTER DOWNLOADING!</p>
+</div>
+</section>
+
+<section id="sec-appstore-steps-1-5">
+<ul>
+<li id="as-step-1"><strong>Step 1:</strong> Open the App Store app on iPhone/iPad.</li>
+<li id="as-step-2"><strong>Step 2:</strong> Tap the Avatar in the top-right corner. Scroll to the bottom and tap <strong>Sign Out</strong> of the old account.</li>
+<li id="as-step-3"><strong>Step 3:</strong> Enter the ID and Password provided by Kurd0o.</li>
+<li id="as-step-4"><strong>Step 4:</strong> If a security prompt appears, select “Other Options” → “Don’t Upgrade”.</li>
+<li id="as-step-5"><strong>Step 5:</strong> Search for the game/app and download it. Once downloaded, go back to the Avatar and <strong>Sign Out</strong>.</li>
+</ul>
+</section>
+
+<section id="sec-kurd0o-community">
+<h2 class="divider"><span>💬</span><span id="comm-title">Kurd0o Community</span></h2>
+<p id="comm-desc">For detailed announcements, join Kurd0o's channels right now to get daily Free ID alerts!!!</p>
+<ul>
+<li id="comm-li-tiktok">🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a></li>
+<li id="comm-li-discord">🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Join Discord</a></li>
+<li id="comm-li-telegram">✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a></li>
+<li id="comm-li-shop">🛍️ Buy / Store: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a></li>
+</ul>
+</section>
+
+</div>
+
+<!-- 2. صفحة الانضمام للقنوات والديسكورد -->
+<div id="kurd0o-join-page-view" class="join-view-card">
+<div class="join-view-head">
+<h3 id="join-page-title" style="font-size:17px;font-weight:800;margin:0;color:#111827;">Minecraft</h3>
+<button type="button" onclick="backToMainSiteView()" id="btn-back-site" class="btn-back-site">← Back to Site</button>
+</div>
+
+<p id="join-page-sub" style="font-size:13.5px;color:#374151;margin-bottom:14px;line-height:1.6;font-weight:600;"></p>
+
+<div class="join-list">
+<button type="button" data-target="ch1" onclick="handleJoinTarget('ch1', 'https://t.me/kurd0o1')" class="kurd-join-btn">
+<span>📢 kurd0o1</span>
+<span class="join-status">↗</span>
+</button>
+
+<button type="button" data-target="ch2" onclick="handleJoinTarget('ch2', 'https://t.me/Kurd0o2')" class="kurd-join-btn">
+<span>📢 Kurd0o2</span>
+<span class="join-status">↗</span>
+</button>
+
+<button type="button" data-target="ch3" onclick="handleJoinTarget('ch3', 'https://t.me/Kurd0o3')" class="kurd-join-btn">
+<span>📢 Kurd0o3</span>
+<span class="join-status">↗</span>
+</button>
+
+<button type="button" data-target="ch4" onclick="handleJoinTarget('ch4', 'https://t.me/Kurd0o4')" class="kurd-join-btn">
+<span>📢 Kurd0o4</span>
+<span class="join-status">↗</span>
+</button>
+
+<button type="button" data-target="discord" onclick="handleJoinTarget('discord', 'https://discord.gg/Tn4U989mmz')" class="kurd-join-btn discord-btn">
+<span>🎮 Discord</span>
+<span class="join-status">↗</span>
+</button>
+</div>
+
+<div id="kurd0o-red-account-box" class="red-account-box">
+<button type="button" id="kurd0o-red-account-btn" onclick="openStepGuideView(false)" class="red-account-btn">
+Click here to go to the account
+</button>
+</div>
+</div>
+
+<!-- 3. صفحة الخطوات الثلاث + الجلسة + بطاقة التواصل تحتها -->
+<div id="kurd0o-step-guide-view" class="guide-view-card">
+  <div class="guide-top-bar">
+    <span style="font-weight:800;font-size:15px;color:#be185d;">Kurd0o</span>
+    <button type="button" onclick="backToJoinView()" id="btn-back-join" class="btn-back-site">← Back</button>
+  </div>
+
+  <div class="guide-header-row">
+    <div class="guide-step-badge">02</div>
+    <div class="guide-header-text">
+      <div class="guide-kicker" id="g-kicker">STEP BY STEP</div>
+      <h2 class="guide-title" id="g-title">How to sign in and download the game</h2>
+      <p class="guide-subtitle" id="g-sub">Follow these exact 3 steps before using the account.</p>
+    </div>
+  </div>
+
+  <div class="guide-steps-list">
+    <div class="guide-step-card">
+      <div class="guide-step-num">1</div>
+      <div class="guide-step-body">
+        <h3 id="g-s1-t">Open App Store</h3>
+        <p id="g-s1-d">After reading the guide, get the account at the bottom of the page and sign in only inside the App Store.</p>
+      </div>
     </div>
 
-    <!-- الهيدر الرئيسي -->
-    <div class="w-full max-w-md mx-auto flex flex-col items-center pt-3">
-        
-        <!-- شريط اللغة -->
-        <div class="w-full flex justify-between items-center mb-3">
-            <span class="text-[10px] px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono">CYBER GOLD v2.0</span>
-            <div class="bg-slate-900/90 cyber-border rounded-xl p-1 flex gap-1 text-[11px]">
-                <button onclick="changeLang('ku')" id="btn-ku" class="px-2.5 py-1 rounded-lg font-bold bg-amber-500 text-slate-950 transition">Badînî</button>
-                <button onclick="changeLang('ar')" id="btn-ar" class="px-2.5 py-1 rounded-lg text-slate-300 hover:text-amber-400 transition">عربي</button>
-                <button onclick="changeLang('en')" id="btn-en" class="px-2.5 py-1 rounded-lg text-slate-300 hover:text-amber-400 transition">English</button>
-            </div>
-        </div>
-
-        <!-- أيقونة التاج -->
-        <div onclick="adminClick()" class="w-16 h-16 cyber-gold rounded-2xl flex items-center justify-center cyber-glow mb-3 floating cursor-pointer select-none">
-            <i class="fa-solid fa-crown text-2xl text-slate-950"></i>
-        </div>
-        <h1 class="text-2xl font-extrabold tracking-wider gold-text mb-1">Kurd0oAccounts</h1>
-        <p id="t-subtitle" class="text-[11px] text-amber-200/70 mb-3">پلاتفۆرما Cyber Gold بۆ دابەشکرنا هەژماران</p>
-        
-        <a href="https://t.me/Kurd0o1" target="_blank" class="flex items-center gap-2 px-4 py-1.5 bg-slate-900/90 cyber-border rounded-full text-amber-400 text-xs font-semibold hover:bg-slate-800 transition">
-            <span>@Kurd0o1</span>
-            <i class="fa-brands fa-telegram text-amber-400"></i>
-        </a>
+    <div class="guide-step-card">
+      <div class="guide-step-num">2</div>
+      <div class="guide-step-body">
+        <h3 id="g-s2-t">Search for the game name</h3>
+        <p id="g-s2-d">Search directly for the app name using the search bar. No need to go to <strong>Purchased</strong>.</p>
+      </div>
     </div>
 
-    <!-- المحتوى الأساسي -->
-    <main class="w-full max-w-md mx-auto my-4 flex flex-col gap-4">
-        
-        <!-- لوحة تحكم الأدمن المخفية -->
-        <div id="admin-panel" class="hidden bg-slate-950 border-2 border-amber-500 rounded-2xl p-4 shadow-2xl">
-            <div class="flex justify-between items-center mb-3">
-                <span class="text-xs font-bold text-amber-400"><i class="fa-solid fa-user-shield"></i> Admin Dashboard</span>
-                <button onclick="document.getElementById('admin-panel').classList.add('hidden')" class="text-xs text-red-400">إغلاق ✖</button>
-            </div>
-            <button onclick="unlockDirectly()" class="w-full py-2 bg-emerald-600 text-white text-xs font-bold rounded-lg">فتح الخزنة مباشرة (معاينة الأدمن)</button>
-        </div>
+    <div class="guide-step-card">
+      <div class="guide-step-num">3</div>
+      <div class="guide-step-body">
+        <h3 id="g-s3-t">Sign out after downloading</h3>
+        <p id="g-s3-d">If the game still shows a price, check before confirming to avoid unintended charges. Once downloaded, <strong>sign out of the account from App Store</strong>.</p>
+      </div>
+    </div>
+  </div>
 
-        <!-- بوابة القنوات الإجبارية -->
-        <div id="channels-section" class="bg-slate-900/90 backdrop-blur cyber-border rounded-2xl p-5 cyber-glow relative overflow-hidden">
-            <div class="absolute top-0 right-0 left-0 h-1 cyber-gold"></div>
-            
-            <h2 id="t-ch-title" class="text-sm font-bold text-white mb-1">چەوا هژمارێ وەردگری؟ (كيف تحصل على الحساب؟)</h2>
-            <p id="t-condition-alert" class="text-[11px] text-amber-400 font-bold bg-amber-500/10 border border-amber-500/30 rounded-lg p-2 mb-3">⚠️ شرط فتح الخزنة: يجب الانضمام للقنوات ومنصات التواصل أدناه أولاً!</p>
-            
-            <p id="t-ch-desc" class="text-[11px] text-slate-400 mb-3">هنگاڤێن ئاسان بۆ ڤەکرنا خەزینا هەژماران:</p>
+  <!-- قسم الجلسة النشطة ونسخ الحساب المخفي -->
+  <div id="kurd0o-session-box" class="session-panel">
+    <div class="session-status-bar">
+      <span class="session-active-pill">
+        <span class="session-dot"></span>
+        <span id="ses-active-txt">Active session</span>
+      </span>
+      <span class="session-timer-pill" id="ses-timer-txt">10:00 left</span>
+    </div>
 
-            <!-- خطوات الإرشادات المرتبة -->
-            <div class="grid grid-cols-3 gap-2 mb-4 text-center flex-row-reverse">
-                <div class="bg-slate-950/80 border border-amber-500/30 rounded-xl p-2.5">
-                    <span class="w-5 h-5 cyber-gold rounded-full text-slate-950 text-[10px] font-bold inline-flex items-center justify-center mb-1">1</span>
-                    <p id="t-step1" class="text-[10px] text-slate-300 font-medium">اضغط على الروابط الخمسة</p>
-                </div>
-                <div class="bg-slate-950/80 border border-amber-500/30 rounded-xl p-2.5">
-                    <span class="w-5 h-5 cyber-gold rounded-full text-slate-950 text-[10px] font-bold inline-flex items-center justify-center mb-1">2</span>
-                    <p id="t-step2" class="text-[10px] text-slate-300 font-medium">انتظر 5 ثوانٍ في كل رابط</p>
-                </div>
-                <div class="bg-slate-950/80 border border-amber-500/30 rounded-xl p-2.5">
-                    <span class="w-5 h-5 cyber-gold rounded-full text-slate-950 text-[10px] font-bold inline-flex items-center justify-center mb-1">3</span>
-                    <p id="t-step3" class="text-[10px] text-slate-300 font-medium">ستفتح الخزنة ويظهر الحساب</p>
-                </div>
-            </div>
+    <div class="session-notice" id="ses-notice-txt">
+      🔒 Account and password are hidden. Each copy button has a 30-second cooldown. Read and agree to the notice when copying.
+    </div>
 
-            <!-- شريط التقدم -->
-            <div class="w-full bg-slate-950 rounded-full h-2 mb-2 p-0.5 border border-slate-800">
-                <div id="progress-bar" class="cyber-gold h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-            </div>
-            <div class="flex justify-between text-[10px] text-slate-400 mb-4 px-1">
-                <span id="t-prog-label">رێژا تەواوکرنێ:</span>
-                <span id="progress-text" class="text-amber-400 font-bold">0% (0/5)</span>
-            </div>
+    <div class="cred-card">
+      <div class="cred-card-top">
+        <span class="cred-card-title" id="ses-apple-lbl">Apple Account</span>
+        <span class="cred-card-tag">EMAIL</span>
+      </div>
+      <div class="cred-dots" aria-label="Hidden Apple ID">•••••••••••</div>
+      <button type="button" class="cred-copy-btn" data-cred="email" onclick="handleCredCopyClick('email')">
+        <span>❐</span>
+        <span class="copy-btn-label" id="ses-copy-btn-1">Copy</span>
+      </button>
+    </div>
 
-            <!-- القنوات الـ 5 (تليجرام + ديسكورد) -->
-            <div class="flex flex-col gap-2.5 mb-5">
-                <a href="https://t.me/Kurd0o1" target="_blank" onclick="startTimer(1)" id="ch-1" class="flex items-center justify-between px-4 py-3 bg-slate-950/90 border border-slate-800 rounded-xl hover:border-amber-500/60 transition">
-                    <div id="status-1" class="flex items-center gap-2 text-amber-400"><i class="fa-brands fa-telegram text-base"></i></div>
-                    <span class="text-xs font-medium text-slate-200">Kurd0o1 (Telegram)</span>
-                </a>
-                <a href="https://t.me/Kurd0o2" target="_blank" onclick="startTimer(2)" id="ch-2" class="flex items-center justify-between px-4 py-3 bg-slate-950/90 border border-slate-800 rounded-xl hover:border-amber-500/60 transition">
-                    <div id="status-2" class="flex items-center gap-2 text-amber-400"><i class="fa-brands fa-telegram text-base"></i></div>
-                    <span class="text-xs font-medium text-slate-200">Kurd0o2 (Telegram)</span>
-                </a>
-                <a href="https://t.me/Kurd0o3" target="_blank" onclick="startTimer(3)" id="ch-3" class="flex items-center justify-between px-4 py-3 bg-slate-950/90 border border-slate-800 rounded-xl hover:border-amber-500/60 transition">
-                    <div id="status-3" class="flex items-center gap-2 text-amber-400"><i class="fa-brands fa-telegram text-base"></i></div>
-                    <span class="text-xs font-medium text-slate-200">Kurd0o3 (Telegram)</span>
-                </a>
-                <a href="https://t.me/Kurd0o4" target="_blank" onclick="startTimer(4)" id="ch-4" class="flex items-center justify-between px-4 py-3 bg-slate-950/90 border border-slate-800 rounded-xl hover:border-amber-500/60 transition">
-                    <div id="status-4" class="flex items-center gap-2 text-amber-400"><i class="fa-brands fa-telegram text-base"></i></div>
-                    <span class="text-xs font-medium text-slate-200">Kurd0o4 (Telegram)</span>
-                </a>
-                <a href="https://discord.gg/Tn4U989mmz" target="_blank" onclick="startTimer(5)" id="ch-5" class="flex items-center justify-between px-4 py-3 bg-slate-950/90 border border-slate-800 rounded-xl hover:border-amber-500/60 transition">
-                    <div id="status-5" class="flex items-center gap-2 text-indigo-400"><i class="fa-brands fa-discord text-base"></i></div>
-                    <span class="text-xs font-medium text-slate-200">Kurd0o Discord Server</span>
-                </a>
-            </div>
+    <div class="cred-card">
+      <div class="cred-card-top">
+        <span class="cred-card-title" id="ses-pass-lbl">Password</span>
+        <span class="cred-card-tag">PASSWORD</span>
+      </div>
+      <div class="cred-dots" aria-label="Hidden Password">•••••••••••</div>
+      <button type="button" class="cred-copy-btn" data-cred="password" onclick="handleCredCopyClick('password')">
+        <span>❐</span>
+        <span class="copy-btn-label" id="ses-copy-btn-2">Copy</span>
+      </button>
+    </div>
 
-            <!-- زر فتح الخزنة -->
-            <div id="unlock-btn-container" class="hidden">
-                <button onclick="showAccounts()" class="w-full py-3 cyber-gold text-slate-950 font-extrabold text-xs rounded-xl shadow-lg transition flex items-center justify-center gap-2 animate-bounce">
-                    <i class="fa-solid fa-vault"></i>
-                    <span id="t-unlock-btn">خەزینا هژماران ڤەبوو! دیتنا هژمارێ</span>
-                </button>
-            </div>
-            <p id="hint-text" class="text-[11px] text-amber-400/80">تکایە ل هەمی کەناڵ و پلاتفۆرمان ببنە ئەندام دا خەزینە ڤەکریت</p>
-        </div>
+    <div class="session-footer-note" id="ses-footer-txt">
+      ⏳ Link is valid for 10 minutes after opening. If expired, get a new link from the official page.
+    </div>
+  </div>
 
-        <!-- خزنة الحسابات -->
-        <div id="accounts-section" class="hidden flex flex-col gap-4">
-            <div class="bg-slate-900/95 backdrop-blur cyber-border rounded-2xl p-5 cyber-glow relative overflow-hidden">
-                <div class="absolute top-0 right-0 left-0 h-1 cyber-gold"></div>
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5"><i class="fa-solid fa-vault"></i> <span id="t-vault-title">خەزینا هژماران (Account Vault)</span></span>
-                    <span class="text-[10px] px-2 py-0.5 bg-amber-500/20 text-amber-300 rounded border border-amber-500/30">VIP</span>
-                </div>
+  <!-- بطاقة التواصل وتلقي الإشعارات تحت الجلسة -->
+  <div id="kurd0o-support-box" class="support-card">
+    <div class="support-kicker" id="sup-kicker">NEED HELP?</div>
+    <h3 class="support-title" id="sup-title">Contact and receive notifications</h3>
+    <p class="support-desc" id="sup-desc">Having trouble or need updates? Join Kurd0o's Discord. You can also watch content on TikTok.</p>
+    <div class="support-actions">
+      <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="btn-discord-kurd0o" id="sup-discord-btn">
+        <span>💬</span>
+        <span id="sup-discord-txt">Discord Kurd0o ↗</span>
+      </a>
+      <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="btn-tiktok-kurd0o" id="sup-tiktok-btn">
+        <span>▶</span>
+        <span id="sup-tiktok-txt">TikTok Kurd0o ↗</span>
+      </a>
+    </div>
+  </div>
+</div>
 
-                <div class="mb-3">
-                    <label class="block text-xs text-amber-400 mb-1 font-bold">Email / ICloud</label>
-                    <div class="flex items-center justify-between bg-slate-950 border border-slate-800 rounded-xl p-2.5">
-                        <span dir="ltr" id="email-1" class="text-slate-200 font-mono text-xs select-all tracking-wider">⏳⏳tomorrow⏳⏳</span>
-                        <button onclick="copyText('email-1', this)" class="text-[11px] bg-slate-800 hover:bg-slate-700 text-amber-400 px-3 py-1 rounded-lg transition flex items-center gap-1"><span class="copy-txt">کۆپی</span> <i class="fa-regular fa-copy"></i></button>
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs text-amber-400 mb-1 font-bold">Password</label>
-                    <div class="flex items-center justify-between bg-slate-950 border border-slate-800 rounded-xl p-2.5">
-                        <span dir="ltr" id="pass-1" class="text-slate-200 font-mono text-xs select-all tracking-wider">⏳⏳غدا/سباهي⏳⏳</span>
-                        <button onclick="copyText('pass-1', this)" class="text-[11px] bg-slate-800 hover:bg-slate-700 text-amber-400 px-3 py-1 rounded-lg transition flex items-center gap-1"><span class="copy-txt">کۆپی</span> <i class="fa-regular fa-copy"></i></button>
-                    </div>
-                </div>
-            </div>
+<!-- نافذة التأكيد عند الضغط على نسخ -->
+<div id="kurd0o-copy-modal" class="cred-modal-backdrop" onclick="closeCredModal()">
+  <div class="cred-modal-box" onclick="event.stopPropagation()">
+    <h4 id="cred-modal-title">Copy Notice</h4>
+    <p id="cred-modal-desc">Sign in only inside the App Store and sign out immediately after downloading. Agree to copy?</p>
+    <div class="cred-modal-actions">
+      <button type="button" class="cred-modal-cancel" onclick="closeCredModal()" id="cred-modal-cancel">Cancel</button>
+      <button type="button" class="cred-modal-confirm" onclick="confirmCredCopy()" id="cred-modal-confirm">Agree & Copy</button>
+    </div>
+  </div>
+</div>
 
-            <!-- قسم التواصل والشراء -->
-            <div class="bg-slate-900/95 backdrop-blur cyber-border rounded-2xl p-5 text-center relative overflow-hidden">
-                <div class="absolute top-0 right-0 left-0 h-1 cyber-gold"></div>
-                <p id="t-buy-title" class="text-xs text-slate-300 font-medium mb-1">بۆ بکڕینا یاری و پڕۆگرامان و ئەندامەتییا VIP، پەیوەندیێ ب من بکە:</p>
-                <p class="text-[11px] text-slate-400 mb-3" dir="ltr">For buying games, apps & VIP access, contact me:</p>
-                <a href="https://t.me/yousifmziri" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-2.5 cyber-gold text-slate-950 text-xs font-bold rounded-xl shadow-lg transition transform hover:scale-[1.02]">
-                    <i class="fa-brands fa-telegram text-base"></i>
-                    <span>@yousifmziri</span>
-                </a>
-            </div>
-        </div>
+</main>
 
-    </main>
+<script>
+const LANG_KEY="site_language";
+const LANG_LABELS={
+  en:"🇬🇧 EN ⌄",ar:"🇸🇦 AR ⌄",ku:"KU ⌄",vi:"🇻🇳 VI ⌄",tr:"🇹🇷 TR ⌄",
+  fr:"🇫🇷 FR ⌄",de:"🇩🇪 DE ⌄",es:"🇪🇸 ES ⌄",ru:"🇷🇺 RU ⌄",ja:"🇯🇵 JA ⌄"
+};
 
-    <!-- الفوتر -->
-    <footer class="w-full text-center text-[11px] text-slate-500 pb-3">
-         هەمی ماف پاراستینە &copy; 2026 Kurd0oAccounts
-    </footer>
+const ACCOUNTS_DATA={
+  minecraft:{
+    email:"primeoatgk22818@appios.cc",
+    password:"Ts226696"
+  },
+  shadowrocket:{
+    email:"oso4514@163.com",
+    password:"WTKW37xtfhpF"
+  }
+};
 
-    <script>
-        const translations = {
-            ku: {
-                dir: "rtl", lang: "ku",
-                subtitle: "پلاتفۆرما Cyber Gold بۆ دابەشکرنا هەژماران",
-                chTitle: "چەوا هژمارێ وەردگری؟",
-                conditionAlert: "⚠️ مەرجێ ڤەکرنا خەزینێ: دڤێت ل 5 کەناڵ و پلاتفۆرمان ببە ئەندام پێشوەخت!",
-                chDesc: "هنگاڤێن ئاسان بۆ ڤەکرنا خەزینا هەژماران:",
-                step1: "ل هەر 5 لينکان بنە کلیک",
-                step2: "5 چرکا ل هەر ئێكێ بنە",
-                step3: "خەزینە ڤەکریت و هژمارێ بابهە",
-                progLabel: "رێژا تەواوکرنێ:",
-                unlockBtn: "خەزینا هژماران ڤەبوو! دیتنا هژمارێ",
-                hintText: "تکایە ل هەمی کەناڵ و پلاتفۆرمان ببنە ئەندام دا خەزینە ڤەکریت",
-                vaultTitle: "خەزینا هژماران (Account Vault)",
-                buyTitle: "بۆ بکڕینا یاری و پڕۆگرامان و ئەندامەتییا VIP، پەیوەندیێ ب من بکە:",
-                copyBtn: "کۆپی", copiedText: "کۆپی بوو"
-            },
-            ar: {
-                dir: "rtl", lang: "ar",
-                subtitle: "منصة Cyber Gold لتوزيع الحسابات الاحترافية",
-                chTitle: "كيف تحصل على الحساب؟",
-                conditionAlert: "⚠️ شرط فتح الخزنة: يجب الانضمام للقنوات ومنصات التواصل الخمسة أدناه أولاً!",
-                chDesc: "خطوات بسيطة لفتح خزنة الحسابات:",
-                step1: "اضغط على الروابط الخمسة",
-                step2: "انتظر 5 ثوانٍ في كل رابط",
-                step3: "ستفتح الخزنة ويظهر الحساب",
-                progLabel: "نسبة الإنجاز:",
-                unlockBtn: "تم فتح الخزنة! عرض الحساب الآن",
-                hintText: "يرجى الانضمام إلى جميع القنوات والمنصات لفتح الخزنة",
-                vaultTitle: "خزنة الحسابات (Account Vault)",
-                buyTitle: "لشراء الألعاب والتطبيقات وعضوية VIP، تواصل معي هنا:",
-                copyBtn: "نسخ", copiedText: "تم النسخ"
-            },
-            en: {
-                dir: "ltr", lang: "en",
-                subtitle: "Cyber Gold Platform for Premium Accounts",
-                chTitle: "How to get the account?",
-                conditionAlert: "⚠️ Vault Unlock Condition: You must join the 5 channels & platforms below first!",
-                chDesc: "Simple steps to unlock the account vault:",
-                step1: "Click all 5 links",
-                step2: "Wait 5s in each link",
-                step3: "Vault unlocks to show account",
-                progLabel: "Progress:",
-                unlockBtn: "Vault Unlocked! View Account Now",
-                hintText: "Please join all channels & platforms to unlock the Vault",
-                vaultTitle: "Account Vault",
-                buyTitle: "For buying games, apps & VIP access, contact me:",
-                copyBtn: "Copy", copiedText: "Copied"
-            }
-        };
+const STORAGE_JOIN_KEY="kurd0o_joined_targets_v2";
+const GUIDE_PERSIST_KEY="kurd0o_guide_session_v1";
+const COPY_COOLDOWN_KEY="kurd0o_copy_cooldowns_v1";
+const FIVE_MINUTES_MS=5*60*1000;
+const REQUIRED_TARGETS=["ch1","ch2","ch3","ch4","discord"];
+const timers={};
+const countdowns={};
+let currentSelectedApp="minecraft";
 
-        let currentLang = 'ku';
+const SESSION_DURATION_MS=10*60*1000;
+const COPY_COOLDOWN_SEC=30;
+let sessionEndAt=Date.now()+SESSION_DURATION_MS;
+let pendingCredType=null;
+const copyCooldowns={email:0,password:0};
+const copyIntervals={};
 
-        function changeLang(lang) {
-            currentLang = lang;
-            const t = translations[lang];
-            document.getElementById('html-root').setAttribute('dir', t.dir);
-            document.getElementById('html-root').setAttribute('lang', t.lang);
+const T={
+en:{
+  dir:"ltr",buy:"Apple Accounts",contact:"Contact & Inquiries",
+  h1:"Minecraft iOS – Detailed Review & How to Download on iPhone & iPad",
+  p1:"Some games you download, play for a few days, and forget. Others keep pulling you back time after time even after hundreds of hours.",
+  p2:"<strong>Minecraft iOS</strong> is one of them.",
+  p3:"Without needing hyper-realistic graphics or over-the-top effects, Minecraft stands out with <strong>freedom, creativity, and a vast world</strong> to explore.",
+  c2title:"What Makes Minecraft iOS So Engaging?",
+  c2p1:"Minecraft on iPhone and iPad brings the familiar Minecraft sandbox experience right to your mobile device.",
+  c2p2:"The best part of the game is that it <strong>does not force players down a single fixed path</strong>. As soon as you create a world, you decide your own adventure.",
+  c2li1:"🌲 Want to build a house? Start chopping trees and gathering resources.",
+  c2li2:"🗺️ Want to explore? Gear up and hit the road.",
+  c2li3:"💎 Want to find diamonds? Craft a pickaxe and start mining deep underground.",
+  c2p3:"Or if you just want to relax, you can build a cozy house by the coast, run a farm, and enjoy the Minecraft world your own way.",
+  survTitle:"Survival – Survival and Exploration",
+  survP1:"<strong>Survival</strong> is the best mode if you want to experience the full adventure side of Minecraft. At the start, you have almost nothing. You gather wood, find food, mine resources, and craft your first tools.",
+  survP2:"When night falls, things get more dangerous. Zombies, Skeletons, Spiders, and especially Creepers can spawn around you, so securing a safe shelter on day one is essential.",
+  tipBox:"🔥 <strong>Beginner Tip:</strong> Don't spend your entire first day wandering too far. Prioritize wood, food, tools, and shelter before nightfall.",
+  creaTitle:"Creative – Limitless Building",
+  creaP1:"If Survival is about surviving the wild, <strong>Creative</strong> is like a massive sandbox for building. From simple blocks, players can create:",
+  creaLi1:"🏙️ Modern houses, villas, and cities.",
+  creaLi2:"🏰 Giant castles and fantasy builds.",
+  devTitle:"Experience on iPhone & iPad",
+  devP1:"Minecraft has a version thoughtfully optimized for mobile devices. Moving, jumping, breaking blocks, placing blocks, and opening your inventory are all intuitive on a touch screen.",
+  devP2:"Especially on <strong>iPad</strong>, the larger display gives a much more comfortable view, making building structures and managing inventory noticeably more accurate.",
+  mktTitle:"Add-On, Map and Texture Pack",
+  mktP1:"Once you've played vanilla Minecraft for a while, there are still thousands of extra items to discover through the <strong>Minecraft Marketplace</strong>:",
+  mktLi1:"<strong>Add-On:</strong> Adds new creatures, vehicles, items, and unique weapons.",
+  mktLi2:"<strong>Map:</strong> Play Adventure, Horror, Puzzle, or Mini Game maps.",
+  mktLi3:"<strong>Texture Pack:</strong> Completely refreshes the game's visual look, from blocks to the sky.",
+  warnFull:"⚠️ <strong>Note:</strong> If downloading content from outside (not via Marketplace), carefully check the source and compatibility with your game version to avoid errors.",
+  srTitle:"What Is the Shadowrocket App?",appBtn:"Open",ratingLbl:"236 RATINGS",ageLbl:"AGE",ageSub:"Years",rankLbl:"CHART",rankSub:"Utilities",whatsNew:"What's New >",
+  srP1:"Along with that, we also introduce <strong>Shadowrocket</strong> – an essential Utilities app for users in the Apple ecosystem.",
+  srP2:"It is a <strong>rule-based proxy utility</strong> that helps you manage network connections based on configuration rules. Key highlights:",
+  srLi1:"🔒 Flexible network traffic management (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Real-time network traffic monitoring.",
+  srLi3:"🌐 Modern DNS support (DNS over HTTPS/TLS).",
+  srLi4:"📲 Multi-platform support: iPhone, iPad, Mac, and Apple TV (requires iOS 13.0+).",
+  idTitle:"Get Free Game & App IDs (Or Buy Licensed Access)",
+  idP1:'Want to try <strong>Minecraft</strong> right away or download the <strong>Shadowrocket</strong> tool? Use the accounts shared free daily from Kurd0o, or buy a licensed account at <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Shop Kurd0o</a> to own it permanently.',
+  mcBtn:"GET FREE MINECRAFT DOWNLOAD ID",srBtn:"GET FREE SHADOWROCKET DOWNLOAD ID",
+  guideTitle:"Safe App Store Sign-In Guide",
+  strictWarning:"SPECIAL NOTE: WHEN USING A SHARED ID, NEVER SIGN IN TO DEVICE SETTINGS (ICLOUD). SIGN IN ONLY IN THE APP STORE! SIGN OUT IMMEDIATELY AFTER DOWNLOADING!",
+  modalMc:"Join the 4 channels and Discord to go to the Minecraft account (if you don't join them, the account will not appear).",
+  modalSr:"Join the 4 channels and Discord to go to the Shadowrocket account (if you don't join them, the account will not appear).",
+  waitText:(sec)=>`Wait ${sec}s...`,joinedText:"✓ Joined",backSite:"← Back to Site",backJoin:"← Back",
+  redBtnMc:"Click here to go to the Minecraft account",redBtnSr:"Click here to go to the Shadowrocket account",
+  gKicker:"STEP BY STEP",gTitle:"How to sign in and download the game",gSub:"Follow these exact 3 steps before using the account.",
+  gS1T:"Open App Store",gS1D:"After reading the guide, get the account at the bottom of the page and sign in only inside the App Store.",
+  gS2T:"Search for the game name",gS2D:"Search directly for the app name using the search bar. No need to go to <strong>Purchased</strong>.",
+  gS3T:"Sign out after downloading",gS3D:"If the game still shows a price, check before confirming to avoid unintended charges. Once downloaded, <strong>sign out of the account from App Store</strong>.",
+  sesActive:"Active session",
+  sesRem:(m,s)=>`${m}:${String(s).padStart(2,"0")} left`,
+  sesExpired:"Expired",
+  sesNotice:"🔒 Account and password are hidden. Each copy button has a 30-second cooldown. Read and agree to the notice when copying.",
+  sesApple:"Apple Account",sesPass:"Password",
+  sesCopy:"Copy",sesWait:(s)=>`Wait ${s}s`,sesCopied:"Copied!",
+  sesFooter:"⏳ Link is valid for 10 minutes after opening. If expired, get a new link from the official page.",
+  sesModalTitle:"Copy Notice",
+  sesModalDesc:"Sign in only inside the App Store and sign out immediately after downloading. Agree to copy?",
+  sesCancel:"Cancel",sesConfirm:"Agree & Copy",
+  supKicker:"NEED HELP?",
+  supTitle:"Contact and receive notifications",
+  supDesc:"Having trouble or need updates? Join Kurd0o's Discord. You can also watch content on TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Step 1:</strong> Open the App Store app on iPhone/iPad.",
+  as2:"<strong>Step 2:</strong> Tap the Avatar in the top-right corner. Scroll to the bottom and tap <strong>Sign Out</strong> of the old account.",
+  as3:"<strong>Step 3:</strong> Enter the ID and Password provided by Kurd0o.",
+  as4:"<strong>Step 4:</strong> If a security prompt appears, select “Other Options” → “Don’t Upgrade”.",
+  as5:"<strong>Step 5:</strong> Search for the game/app and download it. Once downloaded, go back to the Avatar and <strong>Sign Out</strong>.",
+  commTitle:"Kurd0o Community",
+  commDesc:"For detailed announcements, join Kurd0o's channels right now to get daily Free ID alerts!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Join Discord</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Buy / Store: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+ar:{
+  dir:"rtl",buy:"حسابات أبل",contact:"تواصل واستفسار",
+  h1:"ماينكرافت iOS – مراجعة تفصيلية وطريقة التحميل على iPhone و iPad",
+  p1:"هناك ألعاب تحملها وتلعبها لأيام ثم تنساها، وهناك ألعاب تعود إليها مراراً وتكراراً رغم قضاء مئات الساعات في تجربتها.",
+  p2:"<strong>ماينكرافت iOS</strong> واحدة من تلك الألعاب.",
+  p3:"دون الحاجة إلى رسوميات فائقة الواقعية أو مؤثرات مبالغ فيها، تحافظ ماينكرافت على جاذبيتها بفضل <strong>الحرية والإبداع وعالم واسع</strong> للاستكشاف.",
+  c2title:"ما الذي يجعل ماينكرافت iOS ممتعة ومميزة؟",
+  c2p1:"تقدم ماينكرافت على iPhone و iPad تجربة اللعب الحر (Sandbox) المألوفة مباشرة على هاتفك.",
+  c2p2:"أكثر ما يميز اللعبة أنها <strong>لا تجبر اللاعب على مسار واحد ثابت</strong>؛ فبمجرد إنشاء العالم يمكنك تحديد مغامرتك بنفسك.",
+  c2li1:"🌲 تريد بناء منزل؟ ابدأ بقطع الأشجار وجمع الموارد.",
+  c2li2:"🗺️ تريد الاستكشاف؟ جهّز معداتك وانطلق في الرحلة.",
+  c2li3:"💎 تريد العثور على الألماس؟ اصنع معولاً وابدأ بالحفر عميقاً تحت الأرض.",
+  c2p3:"أو إذا كنت تفضل الاسترخاء، يمكنك بناء منزل قرب البحر وإنشاء مزرعة والاستمتاع بعالم ماينكرافت بطريقتك الخاصة.",
+  survTitle:"Survival – البقاء والاستكشاف",
+  survP1:"وضع <strong>Survival</strong> هو الأنسب إذا أردت عيش روح المغامرة الكاملة في ماينكرافت؛ تبدأ تقريباً بلا شيء وتجمع الخشب والطعام وتستخرج الموارد وتصنع أدواتك الأولى.",
+  survP2:"عندما يحل الليل تصبح الأمور أخطر؛ فقد تظهر الزومبي والهياكل العظمية والعناكب وخاصة الكريبر حولك، لذلك من المهم تأمين مأوى آمن في اليوم الأول.",
+  tipBox:"🔥 <strong>نصيحة للمبتدئين:</strong> لا تقضِ يومك الأول كاملاً في الابتعاد كثيراً؛ اجعل الأولوية للخشب والطعام والأدوات والمأوى قبل حلول الظلام.",
+  creaTitle:"Creative – حرية البناء والإبداع",
+  creaP1:"إذا كان Survival مغامرة للبقاء، فإن <strong>Creative</strong> مساحة إبداع واسعة للبناء؛ فمن الكتل البسيطة يمكن للاعب إنشاء:",
+  creaLi1:"🏙️ منازل حديثة وفيلات ومدناً.",
+  creaLi2:"🏰 قلاعاً ضخمة ومبانٍ خيالية.",
+  devTitle:"التجربة على iPhone و iPad",
+  devP1:"تتوفر ماينكرافت بنسخة محسّنة خصيصاً للأجهزة المحمولة؛ فالحركة والقفز وكسر الكتل ووضعها وفتح حقيبة الأدوات سهلة ومريحة عبر شاشة اللمس.",
+  devP2:"وبشكل خاص على <strong>iPad</strong>، تمنح الشاشة الكبيرة مساحة عرض مريحة للغاية تجعل بناء المشاريع وإدارة المخزون أكثر دقة بكثير.",
+  mktTitle:"Add-On و Map و Texture Pack",
+  mktP1:"بعد قضاء وقت كافٍ في ماينكرافت الأساسية، لا يزال أمامك آلاف الإضافات لاستكشافها عبر <strong>Minecraft Marketplace</strong>:",
+  mktLi1:"<strong>Add-On:</strong> يضيف مخلوقات جديدة ومركبات وعناصر وأسلحة مميزة.",
+  mktLi2:"<strong>Map:</strong> تجربة خرائط المغامرات والرعب والألغاز أو الألعاب المصغرة.",
+  mktLi3:"<strong>Texture Pack:</strong> يغيّر المظهر الرسومي للعبة بالكامل من الكتل وحتى السماء.",
+  warnFull:"⚠️ <strong>تنبيه:</strong> إذا قمت بتحميل محتوى من خارج (ليس عبر Marketplace)، فتحقق جيداً من المصدر ومدى توافقه مع إصدار لعبتك لتجنب الأخطاء.",
+  srTitle:"ما هو تطبيق Shadowrocket؟",appBtn:"فتح",ratingLbl:"236 تقييم",ageLbl:"العمر",ageSub:"سنوات",rankLbl:"التصنيف",rankSub:"أدوات",whatsNew:"الجديد >",
+  srP1:"وبالمناسبة، نعرّفك أيضاً على تطبيق <strong>Shadowrocket</strong> – وهو تطبيق أدوات (Utilities) مهم لمستخدمي منظومة Apple.",
+  srP2:"وهو أداة بروكسي تعتمد على القواعد (<strong>rule-based proxy utility</strong>) تساعدك في إدارة اتصالات الشبكة وفق قواعد الإعداد. من أبرز ميزاته:",
+  srLi1:"🔒 إدارة مرنة لحركة الشبكة (Domain و CIDR و GeoIP وغيرها).",
+  srLi2:"📊 مراقبة حركة البيانات والشبكة بشكل لحظي.",
+  srLi3:"🌐 دعم بروتوكولات DNS الحديثة (DNS over HTTPS/TLS).",
+  srLi4:"📲 دعم متعدد المنصات: iPhone و iPad و Mac وحتى Apple TV (يتطلب iOS 13.0 أو أحدث).",
+  idTitle:"احصل على ID مجاني لتحميل الألعاب والتطبيقات (أو اشترِ نسخة أصلية)",
+  idP1:'هل تريد تجربة <strong>Minecraft</strong> فوراً أو تحتاج لتحميل أداة <strong>Shadowrocket</strong>؟ استخدم الحسابات المجانية التي نشاركها يومياً من Kurd0o، أو اشترِ حساباً رسمياً من <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">متجر Kurd0o</a> لامتلاكه بشكل دائم.',
+  mcBtn:"احصل على ID تحميل ماينكرافت مجاناً",srBtn:"احصل على ID تحميل شادوروكيت مجاناً",
+  guideTitle:"دليل تسجيل الدخول الآمن في App Store",
+  strictWarning:"تنبيه خاص جداً: عند استخدام حساب مشارك، يُمنع نهائياً تسجيل الدخول في إعدادات الجهاز (iCloud). سجّل الدخول فقط داخل App Store! وسجّل الخروج فوراً بعد التحميل!",
+  modalMc:"انضم للقنوات الأربعة والديسكورد للانتقال إلى حساب ماينكرافت (إذا لم تنضم إليهم فلن يظهر لك الحساب).",
+  modalSr:"انضم للقنوات الأربعة والديسكورد للانتقال إلى حساب شادوركوت (إذا لم تنضم إليهم فلن يظهر لك الحساب).",
+  waitText:(sec)=>`انتظر ${sec} ثواني...`,joinedText:"✓ انضممت",backSite:"← العودة إلى الموقع",backJoin:"← رجوع",
+  redBtnMc:"اضغط هنا للانتقال لحساب ماينكرافت",redBtnSr:"اضغط هنا للانتقال لحساب شادوركوت",
+  gKicker:"خطوة بخطوة",gTitle:"طريقة تسجيل الدخول وتحميل اللعبة",gSub:"نفّذ هذه الخطوات الثلاث بدقة قبل استخدام الحساب.",
+  gS1T:"افتح App Store",gS1D:"بعد قراءة الدليل، احصل على الحساب أسفل الصفحة وسجّل الدخول فقط داخل App Store.",
+  gS2T:"ابحث عن اسم اللعبة",gS2D:"ابحث مباشرة عن اسم التطبيق باستخدام شريط البحث. لا حاجة للدخول إلى قسم <strong>المشتريات (Purchased)</strong>.",
+  gS3T:"سجّل الخروج بعد التحميل",gS3D:"إذا كانت اللعبة لا تزال تعرض سعراً، تحقّق قبل التأكيد لتجنب أي دفع غير مقصود. وبعد انتهاء التحميل، <strong>سجّل الخروج من الحساب داخل App Store</strong>.",
+  sesActive:"الجلسة نشطة",
+  sesRem:(m,s)=>`متبقي ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"منتهية",
+  sesNotice:"🔒 الحساب وكلمة المرور مخفيان. كل زر نسخ له فترة انتظار 30 ثانية. اقرأ الإشعار ووافق عليه عند النسخ.",
+  sesApple:"حساب أبل",sesPass:"كلمة المرور",
+  sesCopy:"نسخ",sesWait:(s)=>`انتظر ${s}ث`,sesCopied:"تم النسخ!",
+  sesFooter:"⏳ الرابط صالح لمدة 10 دقائق بعد الفتح. عند انتهاء الصلاحية، احصل على رابط جديد من الصفحة الرسمية.",
+  sesModalTitle:"إشعار النسخ",
+  sesModalDesc:"سجّل الدخول فقط داخل App Store وسجّل الخروج فوراً بعد التحميل. هل توافق على المتابعة والنسخ؟",
+  sesCancel:"إلغاء",sesConfirm:"موافق ونسخ",
+  supKicker:"هل تحتاج مساعدة؟",
+  supTitle:"تواصل وتلقّ الإشعارات",
+  supDesc:"تواجه مشكلة أو تحتاج تحديثات؟ انضم إلى ديسكورد Kurd0o، ويمكنك أيضاً مشاهدة المحتوى على تيك توك.",
+  supDiscord:"ديسكورد Kurd0o ↗",
+  supTikTok:"تيك توك Kurd0o ↗",
+  as1:"<strong>الخطوة 1:</strong> افتح تطبيق App Store على iPhone/iPad.",
+  as2:"<strong>الخطوة 2:</strong> اضغط على صورة الحساب (Avatar) في الزاوية العلوية اليمنى. انزل للأسفل واختر <strong>تسجيل الخروج</strong> من الحساب القديم.",
+  as3:"<strong>الخطوة 3:</strong> أدخل الـ ID وكلمة المرور المقدمة من Kurd0o.",
+  as4:"<strong>الخطوة 4:</strong> إذا ظهرت رسالة أمان، اختر «خيارات أخرى» ← «عدم الترقية».",
+  as5:"<strong>الخطوة 5:</strong> ابحث عن اللعبة/التطبيق وحمّله. وبعد انتهاء التحميل، ارجع إلى صورة الحساب و<strong>سجّل الخروج</strong>.",
+  commTitle:"مجتمع Kurd0o",
+  commDesc:"لمعرفة تفاصيل الإشعارات، ادخل الآن إلى قنوات Kurd0o لتصلك تنبيهات الحسابات المجانية يومياً!!!",
+  commTikTok:'🎵 تيك توك: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 ديسكورد: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">انضم للديسكورد</a>',
+  commTelegram:'✈️ قناة تيليغرام: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ الشراء / المتجر: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+ku:{
+  dir:"rtl",buy:"هژمارێن Apple",contact:"پەیوەندی و پسیار",
+  h1:"Minecraft iOS – شرۆڤەیا هویر و چاوانیا داگرتنێ ل iPhone و iPad",
+  p1:"هندەك یاری هەنە پشتی چەند رۆژان ژ بیردچن، بەلێ هندەك یاری هەنە سەرەرای سەدها دەمژمێران هەر تە دکێشنە خۆ.",
+  p2:"<strong>Minecraft iOS</strong> ئێك ژ وان یاریانە.",
+  p3:"بێی پێدڤی ب گرافیکێن زۆر ریال یان ئێفێکتێن زێدە هەبیت، ماینکرافت ب <strong>ئازادی، داهێنان و جیهانەکا بەرفرەهـ</strong> بۆ گەڕیانێ خۆ دیار دکەت.",
+  c2title:"چ وە دکەت Minecraft iOS ئەڤەندە خوش و سەرنجراکێش بیت؟",
+  c2p1:"ماینکرافت ل سەر iPhone و iPad ئەزموونا ئاسایی یا یاریا Sandbox ئێکسەر دئینیتە ناڤ موبایلا تە.",
+  c2p2:"باشترین تشت د یاریێ دا ئەوە کو <strong>تە نەچار ناکەت ل سەر ئێک رێکا دیارکری بچی</strong>؛ هەر کو تە جیهانەک چێکر، تو بخۆ سەرکێشیا خۆ هەلدبژێری.",
+  c2li1:"🌲 دڤێت خانیکەکی چێکەی؟ دەست ب بڕینا داران و کۆمکرنا کەلوپەلان بکە.",
+  c2li2:"🗺️ دڤێت بگەڕیێ؟ خۆ چەک بکە و بکەڤە رێ.",
+  c2li3:"💎 دڤێت ئەڵماس ببینی؟ تێڤرەکێ چێکە و دەست ب هەلکۆلانێ بکە ل بن عەردی.",
+  c2p3:"یان ئەگەر تە بڤێت بێهنڤەدەییەکێ بکەی، دشێی خانیکەکێ ل نێزیک بەحری چێکەی، زەڤیەکێ بکەیە مەزرەعە و ب شێوێ خۆ ژ جیهانا ماینکرافتێ چێژ ببینی.",
+  survTitle:"Survival – مان و گەڕیان",
+  survP1:"شێوازێ <strong>Survival</strong> یێ هەری باشە ئەگەر تە بڤێت لایەنێ تەمام یێ سەرکێشیێ د ماینکرافتێ دا ببینی؛ ل دەستپێکێ تە چ تشت نینە، دار و خوارنێ کۆم دکەی و ئامیرێن خۆ یێن ئێکێ چێدکەی.",
+  survP2:"دەمێ شەڤ دهێت تشت مەترسیدارتر دبن؛ زۆمبی، ئێسکەپەیکەر، پەپک و ب تایبەت کریپەر ل دەوروبەرێ تە پەیدا دبن، لەوما دابینکرنا جهەکێ پاراستی ل رۆژا ئێکێ گەلەک گرنگە.",
+  tipBox:"🔥 <strong>شیرەت بۆ دەستپێکەران:</strong> هەمی رۆژا خۆ یا ئێکێ ب دویرکەفتنا زۆر ڤە نەبۆرینە؛ دار، خوارن، ئامیر و جهێ ڤەحەویانێ بێخە پێشیا هاتنا شەڤێ.",
+  creaTitle:"Creative – ئازادیا ئاڤاکرنێ",
+  creaP1:"ئەگەر Survival لسەر مانێ بیت، <strong>Creative</strong> وەکی مەیدانەکا مەزنە بۆ ئاڤاکرنێ؛ ژ بلوکێن سادە یاریکەر دشێت چێبکەت:",
+  creaLi1:"🏙️ خانێن مودێرن، ڤێلا و باژێڕ.",
+  creaLi2:"🏰 قەلەهێن مەزن و ئاڤاهیێن خەیالی.",
+  devTitle:"ئەزموون ل سەر iPhone و iPad",
+  devP1:"ماینکرافت ب شێوەیەکێ باش بۆ ئامیرێن موبایلێ هاتیە رێکخستن؛ لڤین، بازدان، شکاندن و دانانا بلوکان و ڤەکرنا جانتایێ ب شاشا دەستێ گەلەک ب ساناهی و ئاسانە.",
+  devP2:"ب تایبەت ل سەر <strong>iPad</strong>، شاشا مەزنتر دیتنەکا گەلەک ئارامتر ددەت و ئاڤاکرن و رێکخستنا کەلوپەلان هویرتر دکەت.",
+  mktTitle:"Add-On، Map و Texture Pack",
+  mktP1:"پشتی تو ماوەکێ د ماینکرافتا سەرەکی دا یاریێ دکەی، هێشتا هزاران زێدەهی هەنە کو تو ب رێکا <strong>Minecraft Marketplace</strong> ببینی:",
+  mktLi1:"<strong>Add-On:</strong> بونەوەر، ترومبێل، کەلوپەل و چەکێن نوی زێدە دکەت.",
+  mktLi2:"<strong>Map:</strong> یاریکرنا نەخشەیێن سەرکێشی، ترس، مەتەلۆک یان یاریێن بچیک.",
+  mktLi3:"<strong>Texture Pack:</strong> شێوێ گرافیکی یێ یاریێ ب تەمامی ژ بلوکان هەتا ئەسمانی دگوهۆڕیت.",
+  warnFull:"⚠️ <strong>تێبینی:</strong> ئەگەر تو تشتەکی ژ دەرڤە (نە ب رێکا Marketplace) دابگری، ب هویرى سەرچاوە و گونجاندنا وێ دگەل ڤێرژنا یاریا خۆ بپشکنە دا خەلەتی چێنەبن.",
+  srTitle:"ئەپڵیکەیشنا Shadowrocket چیە؟",appBtn:"ڤەکرن",ratingLbl:"236 هەلسەنگاندن",ageLbl:"ژیی",ageSub:"ساڵ",rankLbl:"رێزبەندی",rankSub:"ئامیر",whatsNew:"یێ نوی >",
+  srP1:"ل گەل ڤێ یەکێ، ئەم ئەپڵیکەیشنا <strong>Shadowrocket</strong> ژی پێشکێشی تە دکەین – کو ئێک ژ ئەپێن گرنگ یێن Utilities یە بۆ بەکارهێنەرێن Apple.",
+  srP2:"ئەو ئامیرەکێ بروکسیێ یە کو ل سەر بنەمایێ قانوونان کار دکەت (<strong>rule-based proxy utility</strong>) و هاریکاریا تە دکەت د رێکخستنا پەیوەندیێن ئینتەرنێتێ دا. گرنگترین تایبەتمەندی:",
+  srLi1:"🔒 رێکخستنا نەرم یا ترافیکا ئینتەرنێتێ (Domain، CIDR، GeoIP و هتد).",
+  srLi2:"📊 چاڤدێریا ترافیکا داتایان و ئینتەرنێتێ ب شێوەیێ ڕاستەوخۆ.",
+  srLi3:"🌐 پشتەڤانیا پرۆتۆکۆلێن نوی یێن DNS (DNS over HTTPS/TLS).",
+  srLi4:"📲 پشتەڤانیا چەند پلاتفۆرمان: iPhone، iPad، Mac و Apple TV (پێدڤی ب iOS 13.0 یان پترە).",
+  idTitle:"IDـێ بێ بەرامبەر بۆ یاری و ئەپان ببە (یان ب کڕین ببە خۆدان)",
+  idP1:'دڤێت ئێکسەر <strong>Minecraft</strong> تاقی بکەی یان ئامیرێ <strong>Shadowrocket</strong> دابگری؟ هژمارێن بێ بەرامبەر کو رۆژانە ژ Kurd0o بەلاڤ دبن بکاربینە، یان هژمارەکا فەرمی ژ <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">فرۆشگەها Kurd0o</a> بکڕە دا هەردەم یا تە بیت.',
+  mcBtn:"IDـێ بێ بەرامبەر یێ داگرتنا ماینکرافت ببە",srBtn:"IDـێ بێ بەرامبەر یێ داگرتنا شادورۆکێت ببە",
+  guideTitle:"رێنماییا چوونا ژۆر یا پاراستی د App Store دا",
+  strictWarning:"تێبینیا زۆر تایبەت: دەمێ هژمارەکا هەڤپشک بکار دئینی، ب چ رەنگەکێ نەچە د Settingsـا ئامیرێ خۆ (iCloud). بتنێ د ناڤ App Store دا بچە ژۆر! و پشتی داگرتنێ ئێکسەر دەربکەڤە!",
+  modalMc:"بەژدار ببە د هەر ٤ کەناڵان و دیسکۆردی دا دا بچیە سەر هژمارا ماینکرافتێ (ئەگەر بەژدار نەبی هژمار بۆ تە دیار نابیت).",
+  modalSr:"بەژدار ببە د هەر ٤ کەناڵان و دیسکۆردی دا دا بچیە سەر هژمارا شادورۆکێتێ (ئەگەر بەژدار نەبی هژمار بۆ تە دیار نابیت).",
+  waitText:(sec)=>`چاڤەڕێ بە ${sec} چرکە...`,joinedText:"✓ بەژدار بووی",backSite:"← ڤەگەڕیان بۆ مالپەڕی",backJoin:"← زڤڕین",
+  redBtnMc:"ل ڤێرێ بکە دا بچیە سەر هژمارا ماینکرافتێ",redBtnSr:"ل ڤێرێ بکە دا بچیە سەر هژمارا شادورۆکێتێ",
+  gKicker:"هەنگاڤ ب هەنگاڤ",gTitle:"چاوانیا چوونا ژۆر و داگرتنا یاریێ",gSub:"ئەڤ هەر ٣ هەنگاڤان ب دروستی بجھ بینە بەریا بکارئینانا هژمارێ.",
+  gS1T:"App Store ڤەکە",gS1D:"پشتی خواندنا رێنمایێ، هژمارێ ل دوماهیا پەڕی ببە و بتنێ د ناڤ App Store دا بچە ژۆر.",
+  gS2T:"ل ناڤێ یاریێ بگەڕێ",gS2D:"ئێکسەر ب رێکا بارێ لێگەڕینێ ل ناڤێ ئەپێ بگەڕێ. پێدڤی ناکەت بچییە د بەشێ <strong>Purchased</strong> دا.",
+  gS3T:"پشتی داگرتنێ دەربکەڤە",gS3D:"ئەگەر یاریێ هێشتا نرخ نیشان دا، بەریا پشتڕاستکرنێ بپشکنە دا پارە ب خەلەتی نەچیت. پشتی داگرتنێ، <strong>ژ هژمارێ د ناڤ App Store دا دەربکەڤە</strong>.",
+  sesActive:"سێشەن چالاکە",
+  sesRem:(m,s)=>`${m}:${String(s).padStart(2,"0")} مایە`,
+  sesExpired:"بەسەرچوو",
+  sesNotice:"🔒 هژمار و پاسۆرد د ڤەشارتی نە. هەر دوگمەیەکا کۆپیێ ٣٠ چرکە چاڤەڕێکرن هەیە. ئاگەهداریێ بخوینە و پەسەند بکە دەمێ کۆپی دکەی.",
+  sesApple:"هژمارا Apple",sesPass:"پاسۆرد",
+  sesCopy:"کۆپی",sesWait:(s)=>`${s}چ چاڤەڕێ بە`,sesCopied:"هاتە کۆپی!",
+  sesFooter:"⏳ لینک بۆ ماوێ ١٠ خولەکان پشتی ڤەکرنێ کارا یە. ئەگەر ب سەر چوو، لینکەکێ نوی ژ پەڕێ فەرمی ببە.",
+  sesModalTitle:"ئاگەهداریا کۆپیێ",
+  sesModalDesc:"بتنێ د ناڤ App Store دا بچە ژۆر و پشتی داگرتنێ ئێکسەر دەربکەڤە. رازی یی کۆپی بکەی؟",
+  sesCancel:"هەلوەشاندن",sesConfirm:"پەسەند و کۆپی",
+  supKicker:"پێدڤی هاریکاریێ یی؟",
+  supTitle:"پەیوەندی و وەرگرتنا ئاگەهداریان",
+  supDesc:"ئاریشەیەک هەیە یان پێدڤی ب نووکرنێ یی؟ بەژدار ببە د دیسکۆردێ Kurd0o دا، و دشێی ناوەڕۆکێ ل سەر تیک تۆکی ژی ببینی.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>هەنگاڤا 1:</strong> ئەپا App Store ل سەر iPhone/iPad ڤەکە.",
+  as2:"<strong>هەنگاڤا 2:</strong> ل وێنێ ئەکاونتێ (Avatar) بدە ل سەرێ لایێ راستێ. بڕۆ خوارێ و <strong>Sign Out</strong>ـا هژمارا کەڤن بکە.",
+  as3:"<strong>هەنگاڤا 3:</strong> ID و پاسۆردا کو ژ لایێ Kurd0o ڤە هاتیە دان بنڤیسە.",
+  as4:"<strong>هەنگاڤا 4:</strong> ئەگەر نامەیەکا سیکیوریتیێ هات، «Other Options» ← «Don’t Upgrade» هەلبژێرە.",
+  as5:"<strong>هەنگاڤا 5:</strong> ل یاریێ/ئەپێ بگەڕێ و دابگرە. پشتی داگرتنێ، بزڤڕە سەر وێنێ ئەکاونتێ و <strong>Sign Out</strong> بکە.",
+  commTitle:"کۆمەڵگەها Kurd0o",
+  commDesc:"بۆ زانینا هویرکاریێن راگەهاندنان، نوکە بچە د کەناڵێن Kurd0o دا دا رۆژانە ئاگەهداریێن IDـێن بێ بەرامبەر بۆ تە بهێن!!!",
+  commTikTok:'🎵 تیک تۆک: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 دیسکۆرد: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">بەژداربوون د دیسکۆردی دا</a>',
+  commTelegram:'✈️ کەناڵا تێلیگرامێ: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ کڕین / فرۆشگەهـ: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+vi:{
+  dir:"ltr",buy:"Tài khoản Apple",contact:"Liên hệ & Giải đáp",
+  h1:"Minecraft iOS – Đánh giá chi tiết & Cách tải trên iPhone và iPad",
+  p1:"Có những trò chơi bạn tải về, chơi vài ngày rồi quên. Nhưng cũng có những trò chơi luôn níu giữ bạn quay lại dù đã chơi hàng trăm giờ.",
+  p2:"<strong>Minecraft iOS</strong> là một trong số đó.",
+  p3:"Không cần đồ họa siêu thực hay hiệu ứng quá đà, Minecraft nổi bật nhờ <strong>sự tự do, sáng tạo và thế giới rộng lớn</strong> để khám phá.",
+  c2title:"Điều gì khiến Minecraft iOS hấp dẫn đến vậy?",
+  c2p1:"Minecraft trên iPhone và iPad mang trải nghiệm sandbox quen thuộc đến ngay thiết bị di động của bạn.",
+  c2p2:"Điểm tuyệt nhất của trò chơi là <strong>không ép người chơi đi theo một lối mòn cố định</strong>. Ngay khi tạo thế giới, bạn tự quyết định cuộc phiêu lưu của mình.",
+  c2li1:"🌲 Muốn xây nhà? Hãy bắt đầu chặt cây và thu thập tài nguyên.",
+  c2li2:"🗺️ Muốn khám phá? Trang bị đồ đạc và lên đường.",
+  c2li3:"💎 Muốn tìm kim cương? Chế tạo cuốc và đào sâu xuống lòng đất.",
+  c2p3:"Hoặc nếu chỉ muốn thư giãn, bạn có thể dựng một ngôi nhà ấm cúng bên bờ biển, làm nông trại và tận hưởng thế giới Minecraft theo cách riêng.",
+  survTitle:"Survival – Sinh tồn và Khám phá",
+  survP1:"<strong>Survival</strong> là chế độ tuyệt vời nhất nếu bạn muốn trải nghiệm trọn vẹn khía cạnh phiêu lưu của Minecraft. Ban đầu bạn gần như không có gì, phải đốn gỗ, kiếm thức ăn, khai thác tài nguyên và chế tạo công cụ đầu tiên.",
+  survP2:"Khi màn đêm buông xuống, mọi thứ nguy hiểm hơn. Zombie, Skeleton, Nhện và đặc biệt là Creeper có thể xuất hiện quanh bạn, vì vậy dựng chỗ trú an toàn ngay ngày đầu là rất cần thiết.",
+  tipBox:"🔥 <strong>Mẹo cho người mới:</strong> Đừng dành cả ngày đầu đi lang thang quá xa. Hãy ưu tiên gỗ, thức ăn, công cụ và nơi trú ẩn trước khi trời tối.",
+  creaTitle:"Creative – Xây dựng không giới hạn",
+  creaP1:"Nếu Survival là sinh tồn nơi hoang dã, thì <strong>Creative</strong> giống như một hộp cát khổng lồ để xây dựng. Từ những khối đơn giản, người chơi có thể tạo ra:",
+  creaLi1:"🏙️ Nhà hiện đại, biệt thự và thành phố.",
+  creaLi2:"🏰 Lâu đài khổng lồ và công trình giả tưởng.",
+  devTitle:"Trải nghiệm trên iPhone & iPad",
+  devP1:"Minecraft có phiên bản tối ưu chu đáo cho thiết bị di động. Di chuyển, nhảy, phá khối, đặt khối và mở túi đồ đều trực quan trên màn hình cảm ứng.",
+  devP2:"Đặc biệt trên <strong>iPad</strong>, màn hình lớn mang lại góc nhìn thoải mái hơn nhiều, giúp xây công trình và quản lý kho đồ chính xác hơn rõ rệt.",
+  mktTitle:"Add-On, Map và Texture Pack",
+  mktP1:"Sau khi chơi Minecraft thuần túy một thời gian, vẫn còn hàng nghìn vật phẩm bổ sung để khám phá qua <strong>Minecraft Marketplace</strong>:",
+  mktLi1:"<strong>Add-On:</strong> Thêm sinh vật mới, phương tiện, vật phẩm và vũ khí độc đáo.",
+  mktLi2:"<strong>Map:</strong> Chơi bản đồ Phiêu lưu, Kinh dị, Giải đố hoặc Mini Game.",
+  mktLi3:"<strong>Texture Pack:</strong> Làm mới hoàn toàn diện mạo đồ họa của game, từ khối vuông đến bầu trời.",
+  warnFull:"⚠️ <strong>Lưu ý:</strong> Nếu tải nội dung từ bên ngoài (không qua Marketplace), hãy kiểm tra kỹ nguồn và độ tương thích với phiên bản game để tránh lỗi.",
+  srTitle:"Ứng dụng Shadowrocket là gì?",appBtn:"Mở",ratingLbl:"236 ĐÁNH GIÁ",ageLbl:"ĐỘ TUỔI",ageSub:"Năm",rankLbl:"BẢNG XẾP HẠNG",rankSub:"Tiện ích",whatsNew:"Có gì mới >",
+  srP1:"Cùng với đó, chúng tôi cũng giới thiệu <strong>Shadowrocket</strong> – ứng dụng Tiện ích (Utilities) thiết yếu cho người dùng hệ sinh thái Apple.",
+  srP2:"Đây là <strong>tiện ích proxy dựa trên quy tắc</strong> giúp quản lý kết nối mạng theo cấu hình. Điểm nổi bật:",
+  srLi1:"🔒 Quản lý lưu lượng mạng linh hoạt (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Theo dõi lưu lượng mạng theo thời gian thực.",
+  srLi3:"🌐 Hỗ trợ DNS hiện đại (DNS over HTTPS/TLS).",
+  srLi4:"📲 Hỗ trợ đa nền tảng: iPhone, iPad, Mac và Apple TV (yêu cầu iOS 13.0+).",
+  idTitle:"Nhận ID game & ứng dụng miễn phí (Hoặc mua bản quyền)",
+  idP1:'Muốn thử <strong>Minecraft</strong> ngay hoặc tải công cụ <strong>Shadowrocket</strong>? Hãy dùng tài khoản chia sẻ miễn phí hằng ngày từ Kurd0o, hoặc mua tài khoản bản quyền tại <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Shop Kurd0o</a> để sở hữu vĩnh viễn.',
+  mcBtn:"NHẬN ID TẢI MINECRAFT MIỄN PHÍ",srBtn:"NHẬN ID TẢI SHADOWROCKET MIỄN PHÍ",
+  guideTitle:"Hướng dẫn đăng nhập App Store an toàn",
+  strictWarning:"LƯU Ý ĐẶC BIỆT: KHI DÙNG ID DÙNG CHUNG, TUYỆT ĐỐI KHÔNG ĐĂNG NHẬP VÀO CÀI ĐẶT THIẾT BỊ (ICLOUD). CHỈ ĐĂNG NHẬP TRONG APP STORE! ĐĂNG XUẤT NGAY SAU KHI TẢI!",
+  modalMc:"Tham gia 4 kênh và Discord để tới tài khoản Minecraft (nếu không tham gia, tài khoản sẽ không hiện).",
+  modalSr:"Tham gia 4 kênh và Discord để tới tài khoản Shadowrocket (nếu không tham gia, tài khoản sẽ không hiện).",
+  waitText:(sec)=>`Chờ ${sec}s...`,joinedText:"✓ Đã tham gia",backSite:"← Quay lại trang",backJoin:"← Quay lại",
+  redBtnMc:"Nhấn vào đây để tới tài khoản Minecraft",redBtnSr:"Nhấn vào đây để tới tài khoản Shadowrocket",
+  gKicker:"LÀM THEO TỪNG BƯỚC",gTitle:"Cách đăng nhập và tải game",gSub:"Thực hiện đúng 3 bước sau trước khi sử dụng tài khoản.",
+  gS1T:"Mở App Store",gS1D:"Sau khi đọc hướng dẫn, lấy tài khoản ở cuối trang và chỉ đăng nhập trong App Store.",
+  gS2T:"Tìm tên game",gS2D:"Tìm trực tiếp tên ứng dụng bằng thanh tìm kiếm. Không cần vào mục <strong>Đã mua</strong>.",
+  gS3T:"Tải xong thì đăng xuất",gS3D:"Nếu game còn hiển thị giá, hãy kiểm tra trước khi xác nhận để tránh thanh toán ngoài ý muốn. Sau khi tải xong, <strong>đăng xuất tài khoản khỏi App Store</strong>.",
+  sesActive:"Phiên đang hoạt động",
+  sesRem:(m,s)=>`Còn ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"Hết hạn",
+  sesNotice:"🔒 Tài khoản và mật khẩu được ẩn. Mỗi nút sao chép có thời gian chờ 30 giây. Hãy đọc và đồng ý với thông báo khi sao chép.",
+  sesApple:"Tài khoản Apple",sesPass:"Mật khẩu",
+  sesCopy:"Sao chép",sesWait:(s)=>`Chờ ${s}s`,sesCopied:"Đã sao chép!",
+  sesFooter:"⏳ Liên kết có hiệu lực 10 phút sau khi mở. Hết hạn, vui lòng lấy liên kết mới từ trang chính thức.",
+  sesModalTitle:"Thông báo sao chép",
+  sesModalDesc:"Chỉ đăng nhập trong App Store và đăng xuất ngay sau khi tải. Bạn có đồng ý sao chép không?",
+  sesCancel:"Hủy",sesConfirm:"Đồng ý & Sao chép",
+  supKicker:"CẦN TRỢ GIÚP?",
+  supTitle:"Liên hệ và nhận thông báo",
+  supDesc:"Gặp lỗi hoặc cần cập nhật thông tin? Hãy tham gia Discord của Kurd0o. Bạn cũng có thể xem nội dung trên TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Bước 1:</strong> Mở ứng dụng App Store trên iPhone/iPad.",
+  as2:"<strong>Bước 2:</strong> Chạm vào Ảnh đại diện ở góc trên bên phải. Cuộn xuống cuối và chạm <strong>Đăng xuất</strong> tài khoản cũ.",
+  as3:"<strong>Bước 3:</strong> Nhập ID và Mật khẩu do Kurd0o cung cấp.",
+  as4:"<strong>Bước 4:</strong> Nếu hiện thông báo bảo mật, chọn “Tùy chọn khác” → “Không nâng cấp”.",
+  as5:"<strong>Bước 5:</strong> Tìm game/ứng dụng và tải về. Tải xong thì quay lại Ảnh đại diện và <strong>Đăng xuất</strong>.",
+  commTitle:"Cộng đồng Kurd0o",
+  commDesc:"Để xem thông báo chi tiết, hãy tham gia ngay các kênh của Kurd0o để nhận thông báo ID miễn phí hằng ngày!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Tham gia Discord</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Mua / Cửa hàng: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+tr:{
+  dir:"ltr",buy:"Apple Hesapları",contact:"İletişim ve Sorular",
+  h1:"Minecraft iOS – Detaylı İnceleme ve iPhone & iPad'de İndirme Rehberi",
+  p1:"Bazı oyunları indirir, birkaç gün oynar ve unutursunuz. Bazılarıysa yüzlerce saat sonra bile sizi tekrar tekrar kendine çeker.",
+  p2:"<strong>Minecraft iOS</strong> bunlardan biridir.",
+  p3:"Aşırı gerçekçi grafiklere veya abartılı efektlere ihtiyaç duymadan <strong>özgürlük, yaratıcılık ve keşfedilecek dev bir dünya</strong> sunar.",
+  c2title:"Minecraft iOS'u Bu Kadar Cazip Kılan Nedir?",
+  c2p1:"iPhone ve iPad'deki Minecraft, tanıdık sandbox deneyimini doğrudan mobil cihazınıza getirir.",
+  c2p2:"Oyunun en güzel yanı <strong>oyuncuyu tek bir sabit yola zorlamamasıdır</strong>. Bir dünya oluşturduğunuz anda kendi maceranızı seçersiniz.",
+  c2li1:"🌲 Ev yapmak mı istiyorsun? Ağaç kesmeye ve kaynak toplamaya başla.",
+  c2li2:"🗺️ Keşfetmek mi istiyorsun? Ekipmanını kuşan ve yola çık.",
+  c2li3:"💎 Elmas bulmak mı istiyorsun? Kazma üret ve yerin derinliklerine in.",
+  c2p3:"Ya da sadece rahatlamak istiyorsan sahilde şirin bir ev yapabilir, çiftlik kurabilir ve dünyayı kendi tarzında yaşayabilirsin.",
+  survTitle:"Survival – Hayatta Kalma ve Keşif",
+  survP1:"<strong>Survival</strong>, Minecraft'ın tam macera yönünü yaşamak istiyorsan en iyi moddur. Başlangıçta neredeyse hiçbir şeyin yoktur; odun toplar, yiyecek bulur, kaynak çıkarır ve ilk araçlarını yaparsın.",
+  survP2:"Gece çöktüğünde işler tehlikeli hale gelir. Zombiler, İskeletler, Örümcekler ve özellikle Creeper'lar etrafında doğabilir; bu yüzden ilk gün güvenli bir barınak bulmak şarttır.",
+  tipBox:"🔥 <strong>Yeni Başlayan İpucu:</strong> İlk gününün tamamını çok uzağa giderek harcama. Karanlık çökmeden önce odun, yiyecek, araç ve barınağa öncelik ver.",
+  creaTitle:"Creative – Sınırsız İnşa",
+  creaP1:"Survival vahşi doğada hayatta kalmaksa, <strong>Creative</strong> inşa için dev bir oyun alanı gibidir. Basit bloklardan şunları yapabilirsin:",
+  creaLi1:"🏙️ Modern evler, villalar ve şehirler.",
+  creaLi2:"🏰 Dev kaleler ve fantastik yapılar.",
+  devTitle:"iPhone ve iPad Deneyimi",
+  devP1:"Minecraft'ın mobil cihazlara özel optimize edilmiş bir sürümü vardır. Hareket etmek, zıplamak, blok kırmak/yerleştirmek ve envanter açmak dokunmatik ekranda sezgiseldir.",
+  devP2:"Özellikle <strong>iPad</strong>'de büyük ekran çok daha rahat bir görüş sağlar; yapı inşa etmek ve envanter yönetmek belirgin şekilde daha hassastır.",
+  mktTitle:"Add-On, Map ve Texture Pack",
+  mktP1:"Saf Minecraft'ta biraz vakit geçirdikten sonra <strong>Minecraft Marketplace</strong> üzerinden keşfedeceğin binlerce ekstra içerik vardır:",
+  mktLi1:"<strong>Add-On:</strong> Yeni yaratıklar, araçlar, eşyalar ve özel silahlar ekler.",
+  mktLi2:"<strong>Map:</strong> Macera, Korku, Bulmaca veya Mini Oyun haritaları oynayın.",
+  mktLi3:"<strong>Texture Pack:</strong> Bloklardan gökyüzüne kadar oyunun görsel görünümünü tamamen yeniler.",
+  warnFull:"⚠️ <strong>Not:</strong> Dışarıdan (Marketplace dışında) içerik indiriyorsanız, hataları önlemek için kaynağı ve oyun sürümünüzle uyumluluğu dikkatle kontrol edin.",
+  srTitle:"Shadowrocket Uygulaması Nedir?",appBtn:"Aç",ratingLbl:"236 DEĞERLENDİRME",ageLbl:"YAŞ",ageSub:"Yıl",rankLbl:"LİSTE",rankSub:"Araçlar",whatsNew:"Yenilikler >",
+  srP1:"Bunun yanı sıra Apple ekosistemindeki kullanıcılar için önemli bir Araçlar (Utilities) uygulaması olan <strong>Shadowrocket</strong>'ı da tanıtıyoruz.",
+  srP2:"Yapılandırma kurallarına göre ağ bağlantılarını yönetmenize yardımcı olan <strong>kural tabanlı bir proxy aracıdır</strong>. Öne çıkanlar:",
+  srLi1:"🔒 Esnek ağ trafiği yönetimi (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Gerçek zamanlı ağ trafiği izleme.",
+  srLi3:"🌐 Modern DNS desteği (DNS over HTTPS/TLS).",
+  srLi4:"📲 Çoklu platform desteği: iPhone, iPad, Mac ve Apple TV (iOS 13.0+ gerektirir).",
+  idTitle:"Ücretsiz Oyun ve Uygulama ID'leri Alın (Veya Lisanslı Erişim Satın Alın)",
+  idP1:'Hemen <strong>Minecraft</strong> denemek veya <strong>Shadowrocket</strong> aracını indirmek mi istiyorsun? Kurd0o\'nun günlük paylaştığı ücretsiz hesapları kullan veya kalıcı sahip olmak için <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Kurd0o Mağaza</a>\'dan lisanslı hesap al.',
+  mcBtn:"ÜCRETSİZ MINECRAFT İNDİRME ID'Sİ AL",srBtn:"ÜCRETSİZ SHADOWROCKET İNDİRME ID'Sİ AL",
+  guideTitle:"Güvenli App Store Giriş Rehberi",
+  strictWarning:"ÖZEL NOT: PAYLAŞIMLI ID KULLANIRKEN ASLA CİHAZ AYARLARINA (ICLOUD) GİRİŞ YAPMAYIN. SADECE APP STORE'A GİRİN! İNDİRDİKTEN HEMEN SONRA ÇIKIŞ YAPIN!",
+  modalMc:"Minecraft hesabına gitmek için 4 kanala ve Discord'a katılın (katılmazsanız hesap görünmez).",
+  modalSr:"Shadowrocket hesabına gitmek için 4 kanala ve Discord'a katılın (katılmazsanız hesap görünmez).",
+  waitText:(sec)=>`${sec}sn bekleyin...`,joinedText:"✓ Katılındı",backSite:"← Siteye Dön",backJoin:"← Geri",
+  redBtnMc:"Minecraft hesabına gitmek için buraya tıklayın",redBtnSr:"Shadowrocket hesabına gitmek için buraya tıklayın",
+  gKicker:"ADIM ADIM",gTitle:"Giriş yapma ve oyunu indirme",gSub:"Hesabı kullanmadan önce şu 3 adımı tam olarak uygulayın.",
+  gS1T:"App Store'u açın",gS1D:"Rehberi okuduktan sonra sayfanın sonundaki hesabı alın ve yalnızca App Store içinde giriş yapın.",
+  gS2T:"Oyun adını arayın",gS2D:"Arama çubuğunu kullanarak uygulama adını doğrudan arayın. <strong>Satın Alınanlar</strong> bölümüne gerek yok.",
+  gS3T:"İndirdikten sonra çıkış yapın",gS3D:"Oyun hâlâ fiyat gösteriyorsa istenmeyen ödemeleri önlemek için onaylamadan önce kontrol edin. İndirme bitince <strong>App Store'dan çıkış yapın</strong>.",
+  sesActive:"Oturum aktif",
+  sesRem:(m,s)=>`${m}:${String(s).padStart(2,"0")} kaldı`,
+  sesExpired:"Süresi doldu",
+  sesNotice:"🔒 Hesap ve şifre gizlidir. Her kopyala butonunda 30 saniye bekleme süresi vardır. Kopyalarken bildirimi okuyup onaylayın.",
+  sesApple:"Apple Hesabı",sesPass:"Şifre",
+  sesCopy:"Kopyala",sesWait:(s)=>`${s}sn bekle`,sesCopied:"Kopyalandı!",
+  sesFooter:"⏳ Bağlantı açıldıktan sonra 10 dakika geçerlidir. Süresi dolarsa resmi sayfadan yeni bağlantı alın.",
+  sesModalTitle:"Kopyalama Bildirimi",
+  sesModalDesc:"Yalnızca App Store içinde giriş yapın ve indirdikten hemen sonra çıkış yapın. Kopyalamayı onaylıyor musunuz?",
+  sesCancel:"İptal",sesConfirm:"Onayla ve Kopyala",
+  supKicker:"YARDIM MI LAZIM?",
+  supTitle:"İletişim ve bildirim alın",
+  supDesc:"Sorun mu yaşıyorsunuz veya güncellemelere mi ihtiyacınız var? Kurd0o Discord'una katılın. TikTok'ta da içerik izleyebilirsiniz.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Adım 1:</strong> iPhone/iPad'de App Store uygulamasını açın.",
+  as2:"<strong>Adım 2:</strong> Sağ üstteki Avatar'a dokunun. En alta inip eski hesaptan <strong>Çıkış Yap</strong>'a dokunun.",
+  as3:"<strong>Adım 3:</strong> Kurd0o tarafından sağlanan ID ve Şifreyi girin.",
+  as4:"<strong>Adım 4:</strong> Güvenlik uyarısı çıkarsa “Diğer Seçenekler” → “Yükseltme” seçeneğini seçin.",
+  as5:"<strong>Adım 5:</strong> Oyunu/uygulamayı arayıp indirin. İndirdikten sonra Avatar'a dönüp <strong>Çıkış Yap</strong>'ın.",
+  commTitle:"Kurd0o Topluluğu",
+  commDesc:"Detaylı duyurular ve günlük Ücretsiz ID uyarıları için hemen Kurd0o kanallarına katılın!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Discord\'a Katıl</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Satın Al / Mağaza: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+fr:{
+  dir:"ltr",buy:"Comptes Apple",contact:"Contact et questions",
+  h1:"Minecraft iOS – Avis détaillé et téléchargement sur iPhone et iPad",
+  p1:"Certains jeux s'oublient après quelques jours. D'autres vous rappellent encore et encore même après des centaines d'heures.",
+  p2:"<strong>Minecraft iOS</strong> en fait partie.",
+  p3:"Sans graphismes hyperréalistes ni effets excessifs, Minecraft séduit par sa <strong>liberté, sa créativité et son vaste monde</strong> à explorer.",
+  c2title:"Qu'est-ce qui rend Minecraft iOS si captivant ?",
+  c2p1:"Minecraft sur iPhone et iPad apporte l'expérience sandbox familière directement sur votre mobile.",
+  c2p2:"Le meilleur atout du jeu est qu'il <strong>n'impose aucun chemin unique</strong>. Dès la création d'un monde, vous choisissez votre aventure.",
+  c2li1:"🌲 Envie de bâtir une maison ? Coupez du bois et récoltez des ressources.",
+  c2li2:"🗺️ Envie d'explorer ? Équipez-vous et partez à l'aventure.",
+  c2li3:"💎 Envie de trouver du diamant ? Fabriquez une pioche et creusez en profondeur.",
+  c2p3:"Ou pour vous détendre, construisez une maison près de la côte, gérez une ferme et profitez du monde à votre rythme.",
+  survTitle:"Survival – Survie et exploration",
+  survP1:"<strong>Survival</strong> est le mode idéal pour vivre l'aventure complète de Minecraft. Au début, vous n'avez presque rien : récoltez du bois, cherchez de la nourriture, minez et fabriquez vos premiers outils.",
+  survP2:"La nuit tombée, le danger augmente. Zombies, Squelettes, Araignées et surtout Creepers peuvent apparaître : sécuriser un abri dès le premier jour est essentiel.",
+  tipBox:"🔥 <strong>Conseil débutant :</strong> Ne passez pas votre premier jour à errer trop loin. Priorisez bois, nourriture, outils et abri avant la nuit.",
+  creaTitle:"Creative – Construction sans limites",
+  creaP1:"Si Survival consiste à survivre, <strong>Creative</strong> est un immense bac à sable pour construire. À partir de simples blocs, créez :",
+  creaLi1:"🏙️ Maisons modernes, villas et villes.",
+  creaLi2:"🏰 Châteaux géants et créations fantastiques.",
+  devTitle:"Expérience sur iPhone et iPad",
+  devP1:"Minecraft dispose d'une version optimisée pour mobile : se déplacer, sauter, casser/poser des blocs et ouvrir l'inventaire sont intuitifs sur écran tactile.",
+  devP2:"Sur <strong>iPad</strong>, le grand écran offre un confort visuel supérieur pour bâtir et gérer l'inventaire avec précision.",
+  mktTitle:"Add-On, Map et Texture Pack",
+  mktP1:"Après le jeu de base, des milliers d'ajouts vous attendent sur le <strong>Minecraft Marketplace</strong> :",
+  mktLi1:"<strong>Add-On :</strong> Ajoute de nouvelles créatures, véhicules, objets et armes.",
+  mktLi2:"<strong>Map :</strong> Jouez à des cartes Aventure, Horreur, Énigme ou Mini-Jeux.",
+  mktLi3:"<strong>Texture Pack :</strong> Renouvelle entièrement l'aspect visuel, des blocs au ciel.",
+  warnFull:"⚠️ <strong>Note :</strong> Si vous téléchargez du contenu hors Marketplace, vérifiez la source et la compatibilité avec votre version pour éviter les erreurs.",
+  srTitle:"Qu'est-ce que l'application Shadowrocket ?",appBtn:"Ouvrir",ratingLbl:"236 AVIS",ageLbl:"ÂGE",ageSub:"Ans",rankLbl:"CLASSEMENT",rankSub:"Utilitaires",whatsNew:"Nouveautés >",
+  srP1:"Nous présentons également <strong>Shadowrocket</strong> – une application Utilitaires essentielle dans l'écosystème Apple.",
+  srP2:"C'est un <strong>utilitaire proxy basé sur des règles</strong> pour gérer les connexions réseau. Points clés :",
+  srLi1:"🔒 Gestion flexible du trafic réseau (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Surveillance du trafic réseau en temps réel.",
+  srLi3:"🌐 Prise en charge DNS moderne (DNS over HTTPS/TLS).",
+  srLi4:"📲 Multiplateforme : iPhone, iPad, Mac et Apple TV (iOS 13.0+ requis).",
+  idTitle:"Obtenez des ID jeux et apps gratuits (ou achetez un accès)",
+  idP1:'Envie d\'essayer <strong>Minecraft</strong> tout de suite ou de télécharger <strong>Shadowrocket</strong> ? Utilisez les comptes partagés gratuitement chaque jour par Kurd0o ou achetez un compte sur <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Boutique Kurd0o</a>.',
+  mcBtn:"OBTENIR UN ID GRATUIT MINECRAFT",srBtn:"OBTENIR UN ID GRATUIT SHADOWROCKET",
+  guideTitle:"Guide de connexion sécurisé à l'App Store",
+  strictWarning:"NOTE SPÉCIALE : AVEC UN ID PARTAGÉ, NE VOUS CONNECTEZ JAMAIS AUX RÉGLAGES DE L'APPAREIL (ICLOUD). CONNECTEZ-VOUS UNIQUEMENT DANS L'APP STORE ! DÉCONNECTEZ-VOUS JUSTE APRÈS LE TÉLÉCHARGEMENT !",
+  modalMc:"Rejoignez les 4 canaux et Discord pour accéder au compte Minecraft (sinon le compte n'apparaîtra pas).",
+  modalSr:"Rejoignez les 4 canaux et Discord pour accéder au compte Shadowrocket (sinon le compte n'apparaîtra pas).",
+  waitText:(sec)=>`Patientez ${sec}s...`,joinedText:"✓ Rejoint",backSite:"← Retour au site",backJoin:"← Retour",
+  redBtnMc:"Cliquez ici pour accéder au compte Minecraft",redBtnSr:"Cliquez ici pour accéder au compte Shadowrocket",
+  gKicker:"ÉTAPE PAR ÉTAPE",gTitle:"Comment se connecter et télécharger le jeu",gSub:"Suivez exactement ces 3 étapes avant d'utiliser le compte.",
+  gS1T:"Ouvrir l'App Store",gS1D:"Après avoir lu le guide, récupérez le compte en bas de la page et connectez-vous uniquement dans l'App Store.",
+  gS2T:"Rechercher le nom du jeu",gS2D:"Recherchez directement le nom de l'application via la barre de recherche. Inutile d'aller dans <strong>Achats</strong>.",
+  gS3T:"Se déconnecter après le téléchargement",gS3D:"Si un prix s'affiche encore, vérifiez avant de confirmer pour éviter tout paiement imprévu. Une fois téléchargé, <strong>déconnectez-vous du compte dans l'App Store</strong>.",
+  sesActive:"Session active",
+  sesRem:(m,s)=>`${m}:${String(s).padStart(2,"0")} restant`,
+  sesExpired:"Expirée",
+  sesNotice:"🔒 Le compte et le mot de passe sont masqués. Chaque bouton de copie a un délai de 30 secondes. Lisez et acceptez l'avis lors de la copie.",
+  sesApple:"Compte Apple",sesPass:"Mot de passe",
+  sesCopy:"Copier",sesWait:(s)=>`Patientez ${s}s`,sesCopied:"Copié !",
+  sesFooter:"⏳ Le lien est valable 10 minutes après ouverture. S'il expire, prenez un nouveau lien sur la page officielle.",
+  sesModalTitle:"Avis de copie",
+  sesModalDesc:"Connectez-vous uniquement dans l'App Store et déconnectez-vous juste après. Acceptez-vous de copier ?",
+  sesCancel:"Annuler",sesConfirm:"Accepter et copier",
+  supKicker:"BESOIN D'AIDE ?",
+  supTitle:"Contact et notifications",
+  supDesc:"Un problème ou besoin de mises à jour ? Rejoignez le Discord de Kurd0o. Vous pouvez aussi voir du contenu sur TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Étape 1 :</strong> Ouvrez l'App Store sur iPhone/iPad.",
+  as2:"<strong>Étape 2 :</strong> Touchez l'avatar en haut à droite, faites défiler et touchez <strong>Déconnexion</strong> de l'ancien compte.",
+  as3:"<strong>Étape 3 :</strong> Saisissez l'identifiant et le mot de passe fournis par Kurd0o.",
+  as4:"<strong>Étape 4 :</strong> Si un message de sécurité apparaît, choisissez « Autres options » → « Ne pas mettre à niveau ».",
+  as5:"<strong>Étape 5 :</strong> Recherchez et téléchargez le jeu/l'app, puis revenez sur l'avatar et <strong>Déconnectez-vous</strong>.",
+  commTitle:"Communauté Kurd0o",
+  commDesc:"Pour les annonces détaillées et les alertes d'ID gratuits quotidiennes, rejoignez les canaux Kurd0o maintenant !!!",
+  commTikTok:'🎵 TikTok : <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord : <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Rejoindre Discord</a>',
+  commTelegram:'✈️ Telegram : <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Acheter / Boutique : <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+de:{
+  dir:"ltr",buy:"Apple-Accounts",contact:"Kontakt & Fragen",
+  h1:"Minecraft iOS – Ausführlicher Test & Download auf iPhone und iPad",
+  p1:"Manche Spiele lädt man herunter, spielt sie kurz und vergisst sie. Andere ziehen einen selbst nach Hunderten Stunden immer wieder an.",
+  p2:"<strong>Minecraft iOS</strong> gehört dazu.",
+  p3:"Ohne hyperrealistische Grafik oder überladene Effekte überzeugt Minecraft durch <strong>Freiheit, Kreativität und eine riesige Welt</strong>.",
+  c2title:"Was macht Minecraft iOS so fesselnd?",
+  c2p1:"Minecraft auf iPhone und iPad bringt das vertraute Sandbox-Erlebnis direkt auf dein Mobilgerät.",
+  c2p2:"Das Beste ist, dass das Spiel <strong>keinen festen Weg vorgibt</strong>. Sobald du eine Welt erstellst, bestimmst du dein Abenteuer selbst.",
+  c2li1:"🌲 Haus bauen? Fang an, Bäume zu fällen und Rohstoffe zu sammeln.",
+  c2li2:"🗺️ Entdecken? Rüste dich aus und ziehe los.",
+  c2li3:"💎 Diamanten finden? Fertige eine Spitzhacke und grabe tief unter der Erde.",
+  c2p3:"Oder entspanne dich einfach mit einem gemütlichen Küstenhaus, einer Farm und deinem eigenen Spieltempo.",
+  survTitle:"Survival – Überleben und Erkunden",
+  survP1:"<strong>Survival</strong> ist ideal für das volle Abenteuer. Zu Beginn hast du kaum etwas: Du sammelst Holz, findest Essen, baust Rohstoffe ab und stellst erste Werkzeuge her.",
+  survP2:"Nachts wird es gefährlich. Zombies, Skelette, Spinnen und besonders Creeper können spawnen – ein sicherer Unterschlupf am ersten Tag ist Pflicht.",
+  tipBox:"🔥 <strong>Einsteiger-Tipp:</strong> Wandere am ersten Tag nicht zu weit. Priorisiere Holz, Essen, Werkzeuge und Unterschlupf vor Einbruch der Dunkelheit.",
+  creaTitle:"Creative – Grenzenloses Bauen",
+  creaP1:"Während Survival Überleben bedeutet, ist <strong>Creative</strong> ein riesiger Baukasten. Aus einfachen Blöcken entstehen:",
+  creaLi1:"🏙️ Moderne Häuser, Villen und Städte.",
+  creaLi2:"🏰 Riesige Burgen und Fantasy-Bauwerke.",
+  devTitle:"Erlebnis auf iPhone und iPad",
+  devP1:"Minecraft ist für Mobilgeräte optimiert: Bewegen, Springen, Blöcke abbauen/setzen und Inventar öffnen funktionieren intuitiv per Touch.",
+  devP2:"Besonders auf dem <strong>iPad</strong> bietet der größere Bildschirm mehr Übersicht beim Bauen und Verwalten des Inventars.",
+  mktTitle:"Add-On, Map und Texture Pack",
+  mktP1:"Nach dem Basisspiel warten im <strong>Minecraft Marketplace</strong> Tausende Zusatzinhalte:",
+  mktLi1:"<strong>Add-On:</strong> Fügt neue Kreaturen, Fahrzeuge, Gegenstände und Waffen hinzu.",
+  mktLi2:"<strong>Map:</strong> Spiele Abenteuer-, Horror-, Rätsel- oder Minispiel-Karten.",
+  mktLi3:"<strong>Texture Pack:</strong> Erneuert die Optik von Blöcken bis zum Himmel.",
+  warnFull:"⚠️ <strong>Hinweis:</strong> Bei Inhalten außerhalb des Marketplace prüfe Quelle und Versionskompatibilität sorgfältig, um Fehler zu vermeiden.",
+  srTitle:"Was ist die Shadowrocket-App?",appBtn:"Öffnen",ratingLbl:"236 BEWERTUNGEN",ageLbl:"ALTER",ageSub:"Jahre",rankLbl:"CHART",rankSub:"Dienstprogramme",whatsNew:"Neuheiten >",
+  srP1:"Außerdem stellen wir <strong>Shadowrocket</strong> vor – eine wichtige Utilities-App für das Apple-Ökosystem.",
+  srP2:"Es ist ein <strong>regelbasiertes Proxy-Tool</strong> zur Verwaltung von Netzwerkverbindungen. Highlights:",
+  srLi1:"🔒 Flexible Steuerung des Netzwerkverkehrs (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Echtzeit-Überwachung des Datenverkehrs.",
+  srLi3:"🌐 Moderne DNS-Unterstützung (DNS over HTTPS/TLS).",
+  srLi4:"📲 Multi-Plattform: iPhone, iPad, Mac und Apple TV (erfordert iOS 13.0+).",
+  idTitle:"Kostenlose Spiel- & App-IDs (oder Lizenz kaufen)",
+  idP1:'<strong>Minecraft</strong> sofort testen oder <strong>Shadowrocket</strong> laden? Nutze die täglichen Gratis-Accounts von Kurd0o oder kaufe einen Account im <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Kurd0o Shop</a>.',
+  mcBtn:"GRATIS MINECRAFT DOWNLOAD-ID HOLEN",srBtn:"GRATIS SHADOWROCKET DOWNLOAD-ID HOLEN",
+  guideTitle:"Sicherer App-Store-Login-Guide",
+  strictWarning:"SPEZIELLER HINWEIS: BEI GETEILTER ID NIEMALS IN DEN GERÄTEEINSTELLUNGEN (ICLOUD) ANMELDEN. NUR IM APP STORE ANMELDEN! DIREKT NACH DEM DOWNLOAD ABMELDEN!",
+  modalMc:"Tritt den 4 Kanälen und Discord bei, um zum Minecraft-Account zu gelangen (sonst erscheint er nicht).",
+  modalSr:"Tritt den 4 Kanälen und Discord bei, um zum Shadowrocket-Account zu gelangen (sonst erscheint er nicht).",
+  waitText:(sec)=>`Warte ${sec}s...`,joinedText:"✓ Beigetreten",backSite:"← Zurück zur Seite",backJoin:"← Zurück",
+  redBtnMc:"Hier klicken für den Minecraft-Account",redBtnSr:"Hier klicken für den Shadowrocket-Account",
+  gKicker:"SCHRITT FÜR SCHRITT",gTitle:"Anmelden und Spiel herunterladen",gSub:"Befolgen Sie genau diese 3 Schritte, bevor Sie den Account nutzen.",
+  gS1T:"App Store öffnen",gS1D:"Holen Sie sich nach dem Lesen der Anleitung den Account am Seitenende und melden Sie sich nur im App Store an.",
+  gS2T:"Spielnamen suchen",gS2D:"Suchen Sie den App-Namen direkt über die Suchleiste. Sie müssen nicht zu <strong>Gekauft</strong> gehen.",
+  gS3T:"Nach dem Download abmelden",gS3D:"Wenn noch ein Preis angezeigt wird, prüfen Sie vor der Bestätigung, um ungewollte Zahlungen zu vermeiden. Nach dem Download <strong>im App Store vom Account abmelden</strong>.",
+  sesActive:"Sitzung aktiv",
+  sesRem:(m,s)=>`Noch ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"Abgelaufen",
+  sesNotice:"🔒 Account und Passwort sind ausgeblendet. Jeder Kopieren-Button hat 30 Sekunden Wartezeit. Bitte Hinweis lesen und beim Kopieren zustimmen.",
+  sesApple:"Apple-Account",sesPass:"Passwort",
+  sesCopy:"Kopieren",sesWait:(s)=>`Warte ${s}s`,sesCopied:"Kopiert!",
+  sesFooter:"⏳ Der Link ist nach dem Öffnen 10 Minuten gültig. Nach Ablauf bitte einen neuen Link von der offiziellen Seite holen.",
+  sesModalTitle:"Kopierhinweis",
+  sesModalDesc:"Nur im App Store anmelden und direkt nach dem Download abmelden. Zustimmen und kopieren?",
+  sesCancel:"Abbrechen",sesConfirm:"Zustimmen & Kopieren",
+  supKicker:"HILFE BENÖTIGT?",
+  supTitle:"Kontakt und Benachrichtigungen",
+  supDesc:"Probleme oder Updates nötig? Tritt dem Discord von Kurd0o bei. Inhalte findest du auch auf TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Schritt 1:</strong> Öffne den App Store auf iPhone/iPad.",
+  as2:"<strong>Schritt 2:</strong> Tippe oben rechts auf den Avatar, scrolle nach unten und tippe auf <strong>Abmelden</strong> beim alten Account.",
+  as3:"<strong>Schritt 3:</strong> Gib ID und Passwort von Kurd0o ein.",
+  as4:"<strong>Schritt 4:</strong> Bei einer Sicherheitsabfrage „Weitere Optionen“ → „Nicht aktualisieren“ wählen.",
+  as5:"<strong>Schritt 5:</strong> Spiel/App suchen und laden. Danach zum Avatar gehen und <strong>Abmelden</strong>.",
+  commTitle:"Kurd0o Community",
+  commDesc:"Für Ankündigungen und tägliche Gratis-ID-Infos tritt jetzt den Kurd0o-Kanälen bei!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Discord beitreten</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Kaufen / Shop: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+es:{
+  dir:"ltr",buy:"Cuentas Apple",contact:"Contacto y consultas",
+  h1:"Minecraft iOS – Reseña detallada y cómo descargar en iPhone y iPad",
+  p1:"Hay juegos que descargas, juegas unos días y olvidas. Otros te atraen una y otra vez incluso tras cientos de horas.",
+  p2:"<strong>Minecraft iOS</strong> es uno de ellos.",
+  p3:"Sin necesitar gráficos hiperrealistas ni efectos exagerados, destaca por su <strong>libertad, creatividad y un mundo inmenso</strong> por explorar.",
+  c2title:"¿Qué hace tan atractivo a Minecraft iOS?",
+  c2p1:"Minecraft en iPhone y iPad lleva la conocida experiencia sandbox directo a tu dispositivo móvil.",
+  c2p2:"Lo mejor es que <strong>no obliga a seguir un único camino</strong>. Al crear un mundo, tú decides tu aventura.",
+  c2li1:"🌲 ¿Quieres hacer una casa? Empieza cortando árboles y reuniendo recursos.",
+  c2li2:"🗺️ ¿Quieres explorar? Equípate y sal a recorrer el mundo.",
+  c2li3:"💎 ¿Quieres encontrar diamantes? Crea un pico y cava bajo tierra.",
+  c2p3:"O si prefieres relajarte, haz una casa junto a la costa, monta una granja y disfruta a tu manera.",
+  survTitle:"Survival – Supervivencia y exploración",
+  survP1:"<strong>Survival</strong> es el mejor modo para vivir la aventura completa. Empiezas casi sin nada: talas madera, buscas comida, extraes recursos y creas tus primeras herramientas.",
+  survP2:"Al caer la noche todo se vuelve más peligroso. Zombis, esqueletos, arañas y sobre todo Creepers pueden aparecer; asegurar un refugio el primer día es clave.",
+  tipBox:"🔥 <strong>Consejo inicial:</strong> No pases todo el primer día alejándote demasiado. Prioriza madera, comida, herramientas y refugio antes de que oscurezca.",
+  creaTitle:"Creative – Construcción sin límites",
+  creaP1:"Si Survival es sobrevivir, <strong>Creative</strong> es un enorme espacio para construir. Con bloques simples puedes crear:",
+  creaLi1:"🏙️ Casas modernas, villas y ciudades.",
+  creaLi2:"🏰 Castillos gigantes y construcciones de fantasía.",
+  devTitle:"Experiencia en iPhone y iPad",
+  devP1:"Minecraft cuenta con una versión optimizada para móviles: moverse, saltar, romper/colocar bloques y abrir el inventario es intuitivo en pantalla táctil.",
+  devP2:"En <strong>iPad</strong>, la pantalla grande ofrece mayor comodidad visual y precisión al construir y gestionar el inventario.",
+  mktTitle:"Add-On, Map y Texture Pack",
+  mktP1:"Tras jugar al modo clásico, hay miles de extras en <strong>Minecraft Marketplace</strong>:",
+  mktLi1:"<strong>Add-On:</strong> Añade nuevas criaturas, vehículos, objetos y armas.",
+  mktLi2:"<strong>Map:</strong> Juega mapas de Aventura, Terror, Puzles o Minijuegos.",
+  mktLi3:"<strong>Texture Pack:</strong> Renueva por completo el aspecto visual, desde bloques hasta el cielo.",
+  warnFull:"⚠️ <strong>Nota:</strong> Si descargas contenido fuera de Marketplace, revisa bien la fuente y compatibilidad con tu versión para evitar errores.",
+  srTitle:"¿Qué es la app Shadowrocket?",appBtn:"Abrir",ratingLbl:"236 VALORACIONES",ageLbl:"EDAD",ageSub:"Años",rankLbl:"RANKING",rankSub:"Utilidades",whatsNew:"Novedades >",
+  srP1:"También presentamos <strong>Shadowrocket</strong>, una app de Utilidades esencial en el ecosistema Apple.",
+  srP2:"Es una <strong>utilidad proxy basada en reglas</strong> para gestionar conexiones de red. Aspectos clave:",
+  srLi1:"🔒 Gestión flexible del tráfico de red (Domain, CIDR, GeoIP...).",
+  srLi2:"📊 Monitoreo del tráfico en tiempo real.",
+  srLi3:"🌐 Soporte DNS moderno (DNS over HTTPS/TLS).",
+  srLi4:"📲 Multiplataforma: iPhone, iPad, Mac y Apple TV (requiere iOS 13.0+).",
+  idTitle:"Obtén IDs gratis de juegos y apps (o compra acceso)",
+  idP1:'¿Quieres probar <strong>Minecraft</strong> ya o descargar <strong>Shadowrocket</strong>? Usa las cuentas gratis diarias de Kurd0o o compra una en <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Tienda Kurd0o</a>.',
+  mcBtn:"OBTENER ID GRATIS DE MINECRAFT",srBtn:"OBTENER ID GRATIS DE SHADOWROCKET",
+  guideTitle:"Guía segura para iniciar sesión en App Store",
+  strictWarning:"NOTA ESPECIAL: AL USAR UN ID COMPARTIDO, NUNCA INICIES SESIÓN EN AJUSTES DEL DISPOSITIVO (ICLOUD). INICIA SESIÓN SOLO EN APP STORE Y CIÉRRALA AL TERMINAR DE DESCARGAR.",
+  modalMc:"Únete a los 4 canales y a Discord para ir a la cuenta de Minecraft (si no te unes, no aparecerá).",
+  modalSr:"Únete a los 4 canales y a Discord para ir a la cuenta de Shadowrocket (si no te unes, no aparecerá).",
+  waitText:(sec)=>`Espera ${sec}s...`,joinedText:"✓ Unido",backSite:"← Volver al sitio",backJoin:"← Atrás",
+  redBtnMc:"Haz clic aquí para ir a la cuenta de Minecraft",redBtnSr:"Haz clic aquí para ir a la cuenta de Shadowrocket",
+  gKicker:"PASO A PASO",gTitle:"Cómo iniciar sesión y descargar el juego",gSub:"Sigue exactamente estos 3 pasos antes de usar la cuenta.",
+  gS1T:"Abre la App Store",gS1D:"Después de leer la guía, obtén la cuenta al final de la página e inicia sesión solo dentro de la App Store.",
+  gS2T:"Busca el nombre del juego",gS2D:"Busca directamente el nombre de la aplicación usando la barra de búsqueda. No hace falta ir a <strong>Comprado</strong>.",
+  gS3T:"Cierra sesión al descargar",gS3D:"Si el juego aún muestra un precio, revisa antes de confirmar para evitar cargos no deseados. Una vez descargado, <strong>cierra sesión de la cuenta en App Store</strong>.",
+  sesActive:"Sesión activa",
+  sesRem:(m,s)=>`Quedan ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"Expirada",
+  sesNotice:"🔒 La cuenta y la contraseña están ocultas. Cada botón de copiar tiene 30 segundos de espera. Lee y acepta el aviso al copiar.",
+  sesApple:"Cuenta de Apple",sesPass:"Contraseña",
+  sesCopy:"Copiar",sesWait:(s)=>`Espera ${s}s`,sesCopied:"¡Copiado!",
+  sesFooter:"⏳ El enlace es válido durante 10 minutos tras abrirlo. Si caduca, obtén uno nuevo en la página oficial.",
+  sesModalTitle:"Aviso de copia",
+  sesModalDesc:"Inicia sesión solo en App Store y ciérrala al terminar. ¿Aceptas copiar?",
+  sesCancel:"Cancelar",sesConfirm:"Aceptar y copiar",
+  supKicker:"¿NECESITAS AYUDA?",
+  supTitle:"Contacto y notificaciones",
+  supDesc:"¿Problemas o necesitas novedades? Únete al Discord de Kurd0o. También puedes ver contenido en TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Paso 1:</strong> Abre la App Store en tu iPhone/iPad.",
+  as2:"<strong>Paso 2:</strong> Toca el Avatar arriba a la derecha, baja al final y toca <strong>Cerrar sesión</strong> de la cuenta anterior.",
+  as3:"<strong>Paso 3:</strong> Introduce el ID y la contraseña proporcionados por Kurd0o.",
+  as4:"<strong>Paso 4:</strong> Si aparece un aviso de seguridad, elige «Otras opciones» → «No actualizar».",
+  as5:"<strong>Paso 5:</strong> Busca y descarga el juego/app; luego vuelve al Avatar y <strong>Cierra sesión</strong>.",
+  commTitle:"Comunidad Kurd0o",
+  commDesc:"Para anuncios detallados y avisos diarios de ID gratis, únete ahora a los canales de Kurd0o!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Unirse a Discord</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Comprar / Tienda: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+ru:{
+  dir:"ltr",buy:"Аккаунты Apple",contact:"Контакты и вопросы",
+  h1:"Minecraft iOS – Подробный обзор и загрузка на iPhone и iPad",
+  p1:"Одни игры скачиваешь, играешь пару дней и забываешь. Другие возвращают к себе снова и снова даже спустя сотни часов.",
+  p2:"<strong>Minecraft iOS</strong> — одна из таких игр.",
+  p3:"Без гиперреалистичной графики и лишних эффектов игра выделяется <strong>свободой, творчеством и огромным миром</strong> для исследования.",
+  c2title:"Чем так увлекателен Minecraft iOS?",
+  c2p1:"Minecraft на iPhone и iPad переносит знакомый опыт песочницы прямо на ваш смартфон или планшет.",
+  c2p2:"Главное — игра <strong>не заставляет идти по одному сценарию</strong>. Создав мир, вы сами выбираете приключение.",
+  c2li1:"🌲 Хотите построить дом? Рубите деревья и собирайте ресурсы.",
+  c2li2:"🗺️ Хотите исследовать мир? Снаряжайтесь и отправляйтесь в путь.",
+  c2li3:"💎 Хотите найти алмазы? Скрафтите кирку и копайте вглубь.",
+  c2p3:"А если хочется отдыха, можно построить уютный дом у моря, разбить ферму и играть в своём темпе.",
+  survTitle:"Survival – Выживание и исследование",
+  survP1:"<strong>Survival</strong> лучше всего подходит для полного приключения. В начале почти ничего нет: добывайте дерево, еду, ресурсы и создайте первые инструменты.",
+  survP2:"С наступлением ночи становится опаснее. Появляются зомби, скелеты, пауки и особенно криперы — безопасное укрытие в первый день критически важно.",
+  tipBox:"🔥 <strong>Совет новичкам:</strong> Не уходите слишком далеко в первый день. Сначала добудьте дерево, еду, инструменты и убежище до темноты.",
+  creaTitle:"Creative – Безграничное строительство",
+  creaP1:"Если Survival — это выживание, то <strong>Creative</strong> — огромная площадка для строек. Из простых блоков можно создать:",
+  creaLi1:"🏙️ Современные дома, виллы и города.",
+  creaLi2:"🏰 Огромные замки и фантастические постройки.",
+  devTitle:"Опыт на iPhone и iPad",
+  devP1:"Версия Minecraft адаптирована для мобильных устройств: движение, прыжки, установка/ломка блоков и инвентарь удобны на сенсорном экране.",
+  devP2:"На <strong>iPad</strong> большой экран даёт более комфортный обзор и точность при строительстве и работе с инвентарём.",
+  mktTitle:"Add-On, Map и Texture Pack",
+  mktP1:"После классической игры в <strong>Minecraft Marketplace</strong> доступны тысячи дополнений:",
+  mktLi1:"<strong>Add-On:</strong> Добавляет новых существ, транспорт, предметы и оружие.",
+  mktLi2:"<strong>Map:</strong> Карты приключений, хоррора, головоломок и мини-игр.",
+  mktLi3:"<strong>Texture Pack:</strong> Полностью обновляет визуальный стиль от блоков до неба.",
+  warnFull:"⚠️ <strong>Примечание:</strong> При загрузке контента не из Marketplace проверяйте источник и совместимость с версией игры во избежание ошибок.",
+  srTitle:"Что такое приложение Shadowrocket?",appBtn:"Открыть",ratingLbl:"236 ОЦЕНОК",ageLbl:"ВОЗРАСТ",ageSub:"Лет",rankLbl:"РЕЙТИНГ",rankSub:"Утилиты",whatsNew:"Что нового >",
+  srP1:"Также представляем <strong>Shadowrocket</strong> — полезную утилиту для пользователей экосистемы Apple.",
+  srP2:"Это <strong>прокси-утилита на основе правил</strong> для управления сетевыми подключениями. Ключевые возможности:",
+  srLi1:"🔒 Гибкое управление трафиком (Domain, CIDR, GeoIP и др.).",
+  srLi2:"📊 Мониторинг сетевого трафика в реальном времени.",
+  srLi3:"🌐 Поддержка современных DNS (DNS over HTTPS/TLS).",
+  srLi4:"📲 Кроссплатформенность: iPhone, iPad, Mac и Apple TV (требуется iOS 13.0+).",
+  idTitle:"Получите бесплатные ID игр и приложений (или купите доступ)",
+  idP1:'Хотите сразу опробовать <strong>Minecraft</strong> или скачать <strong>Shadowrocket</strong>? Используйте ежедневные бесплатные аккаунты от Kurd0o или купите аккаунт в <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">магазине Kurd0o</a>.',
+  mcBtn:"ПОЛУЧИТЬ БЕСПЛАТНЫЙ ID ДЛЯ MINECRAFT",srBtn:"ПОЛУЧИТЬ БЕСПЛАТНЫЙ ID ДЛЯ SHADOWROCKET",
+  guideTitle:"Безопасный вход в App Store",
+  strictWarning:"ВАЖНО: ПРИ ИСПОЛЬЗОВАНИИ ОБЩЕГО ID НИКОГДА НЕ ВХОДИТЕ В НАСТРОЙКАХ УСТРОЙСТВА (ICLOUD). ВХОДИТЕ ТОЛЬКО В APP STORE И СРАЗУ ВЫХОДИТЕ ПОСЛЕ ЗАГРУЗКИ!",
+  modalMc:"Вступите в 4 канала и Discord, чтобы перейти к аккаунту Minecraft (иначе аккаунт не появится).",
+  modalSr:"Вступите в 4 канала и Discord, чтобы перейти к аккаунту Shadowrocket (иначе аккаунт не появится).",
+  waitText:(sec)=>`Ждите ${sec}с...`,joinedText:"✓ Вступили",backSite:"← Назад на сайт",backJoin:"← Назад",
+  redBtnMc:"Нажмите здесь, чтобы перейти к аккаунту Minecraft",redBtnSr:"Нажмите здесь, чтобы перейти к аккаунту Shadowrocket",
+  gKicker:"ШАГ ЗА ШАГОМ",gTitle:"Как войти и скачать игру",gSub:"Выполните ровно эти 3 шага перед использованием аккаунта.",
+  gS1T:"Откройте App Store",gS1D:"После прочтения инструкции возьмите аккаунт внизу страницы и входите только внутри App Store.",
+  gS2T:"Найдите название игры",gS2D:"Ищите название приложения напрямую через строку поиска. Заходить в раздел <strong>Покупки</strong> не нужно.",
+  gS3T:"Выйдите после загрузки",gS3D:"Если у игры всё ещё отображается цена, проверьте перед подтверждением, чтобы избежать случайной оплаты. После загрузки <strong>выйдите из аккаунта в App Store</strong>.",
+  sesActive:"Сессия активна",
+  sesRem:(m,s)=>`Осталось ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"Истекла",
+  sesNotice:"🔒 Аккаунт и пароль скрыты. У каждой кнопки копирования ожидание 30 секунд. Прочтите и примите уведомление при копировании.",
+  sesApple:"Аккаунт Apple",sesPass:"Пароль",
+  sesCopy:"Копировать",sesWait:(s)=>`Ждите ${s}с`,sesCopied:"Скопировано!",
+  sesFooter:"⏳ Ссылка действует 10 минут после открытия. Если срок истёк, возьмите новую ссылку на официальной странице.",
+  sesModalTitle:"Уведомление о копировании",
+  sesModalDesc:"Входите только в App Store и сразу выходите после загрузки. Подтверждаете копирование?",
+  sesCancel:"Отмена",sesConfirm:"Согласен и скопировать",
+  supKicker:"НУЖНА ПОМОЩЬ?",
+  supTitle:"Связь и уведомления",
+  supDesc:"Возникли сложности или нужны обновления? Вступайте в Discord Kurd0o. Контент также доступен в TikTok.",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>Шаг 1:</strong> Откройте App Store на iPhone/iPad.",
+  as2:"<strong>Шаг 2:</strong> Нажмите на аватар в правом верхнем углу, прокрутите вниз и нажмите <strong>Выйти</strong> из старого аккаунта.",
+  as3:"<strong>Шаг 3:</strong> Введите ID и пароль, предоставленные Kurd0o.",
+  as4:"<strong>Шаг 4:</strong> Если появится запрос безопасности, выберите «Другие варианты» → «Не обновлять».",
+  as5:"<strong>Шаг 5:</strong> Найдите и скачайте игру/приложение, затем снова откройте аватар и нажмите <strong>Выйти</strong>.",
+  commTitle:"Сообщество Kurd0o",
+  commDesc:"Чтобы получать анонсы и ежедневные уведомления о бесплатных ID, подпишитесь на каналы Kurd0o прямо сейчас!!!",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Войти в Discord</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ Купить / Магазин: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+},
+ja:{
+  dir:"ltr",buy:"Appleアカウント",contact:"お問い合わせ",
+  h1:"Minecraft iOS – 詳細レビューとiPhone・iPadでのダウンロード方法",
+  p1:"数日で遊ばなくなるゲームもあれば、何百時間遊んでも何度も戻ってきたくなるゲームもあります。",
+  p2:"<strong>Minecraft iOS</strong> はまさにそのひとつです。",
+  p3:"超リアルなグラフィックや派手な演出がなくても、<strong>自由度・創造性・広大な世界</strong>で魅力を発揮します。",
+  c2title:"Minecraft iOSがこれほど夢中になれる理由は？",
+  c2p1:"iPhoneやiPadで、おなじみのサンドボックス体験をそのまま楽しめます。",
+  c2p2:"最大の魅力は<strong>一本道ではないこと</strong>。ワールドを作った瞬間から自分の冒険を決められます。",
+  c2li1:"🌲 家を建てたい？木を切って資源を集めましょう。",
+  c2li2:"🗺️ 探索したい？装備を整えて旅に出ましょう。",
+  c2li3:"💎 ダイヤを探したい？ツルハシを作って地下深くへ掘り進めましょう。",
+  c2p3:"のんびり過ごしたいなら、海辺に家や農場を作って自分のペースで楽しめます。",
+  survTitle:"サバイバル – 生き残りと探索",
+  survP1:"<strong>サバイバル</strong>は冒険を存分に味わうモードです。最初はほぼ手ぶらから始まり、木材や食料、資源を集めて道具を作ります。",
+  survP2:"夜になると危険が増します。ゾンビ、スケルトン、クモ、特にクリーパーが出現するため、初日に安全な拠点を確保することが重要です。",
+  tipBox:"🔥 <strong>初心者ヒント：</strong> 初日は遠くへ行きすぎず、暗くなる前に木材・食料・道具・拠点を優先しましょう。",
+  creaTitle:"クリエイティブ – 自由な建築",
+  creaP1:"サバイバルが生き残りなら、<strong>クリエイティブ</strong>は広大な建築スペースです。ブロックから以下を作れます：",
+  creaLi1:"🏙️ モダンな家、ヴィラ、都市。",
+  creaLi2:"🏰 巨大な城やファンタジー建築。",
+  devTitle:"iPhoneとiPadでの体験",
+  devP1:"モバイル向けに最適化されており、移動・ジャンプ・ブロックの破壊と設置・インベントリ操作がタッチ画面で直感的です。",
+  devP2:"特に<strong>iPad</strong>では広い画面で視認性が高く、建築やインベントリ管理をより正確に行えます。",
+  mktTitle:"アドオン、マップ、テクスチャパック",
+  mktP1:"基本プレイに慣れたら、<strong>Minecraft Marketplace</strong>で数千種類の追加コンテンツを楽しめます：",
+  mktLi1:"<strong>アドオン：</strong> 新しい生き物、乗り物、アイテム、武器を追加します。",
+  mktLi2:"<strong>マップ：</strong> アドベンチャー、ホラー、パズル、ミニゲームを遊べます。",
+  mktLi3:"<strong>テクスチャパック：</strong> ブロックから空まで見た目を一新します。",
+  warnFull:"⚠️ <strong>注意：</strong> Marketplace以外からコンテンツをダウンロードする場合は、エラーを防ぐため提供元とバージョンの適合性を確認してください。",
+  srTitle:"Shadowrocketアプリとは？",appBtn:"開く",ratingLbl:"236件の評価",ageLbl:"年齢",ageSub:"歳",rankLbl:"ランキング",rankSub:"ユーティリティ",whatsNew:"新着情報 >",
+  srP1:"あわせて、Appleエコシステムで役立つユーティリティアプリ <strong>Shadowrocket</strong> もご紹介します。",
+  srP2:"設定ルールに基づいてネットワーク接続を管理する<strong>ルールベースのプロキシユーティリティ</strong>です。主な特徴：",
+  srLi1:"🔒 柔軟な通信管理（Domain、CIDR、GeoIPなど）。",
+  srLi2:"📊 リアルタイムの通信量モニタリング。",
+  srLi3:"🌐 最新のDNS対応（DNS over HTTPS/TLS）。",
+  srLi4:"📲 マルチプラットフォーム対応：iPhone、iPad、Mac、Apple TV（iOS 13.0以降が必要）。",
+  idTitle:"無料ゲーム＆アプリIDを入手（または購入）",
+  idP1:'すぐに <strong>Minecraft</strong> を試したい、または <strong>Shadowrocket</strong> をダウンロードしたいですか？Kurd0oの毎日配布される無料アカウントを使うか、<a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Kurd0oストア</a>でアカウントを購入してください。',
+  mcBtn:"無料のMINECRAFTダウンロードIDを取得",srBtn:"無料のSHADOWROCKETダウンロードIDを取得",
+  guideTitle:"安全なApp Storeサインインガイド",
+  strictWarning:"重要注意：共有IDを使う際は、端末設定（iCLOUD）には絶対にサインインしないでください。APP STOREのみにサインインし、ダウンロード後すぐにサインアウトしてください！",
+  modalMc:"Minecraftアカウントへ進むには4つのチャンネルとDiscordに参加してください（未参加だと表示されません）。",
+  modalSr:"Shadowrocketアカウントへ進むには4つのチャンネルとDiscordに参加してください（未参加だと表示されません）。",
+  waitText:(sec)=>`${sec}秒お待ちください...`,joinedText:"✓ 参加済み",backSite:"← サイトへ戻る",backJoin:"← 戻る",
+  redBtnMc:"ここを押してMinecraftアカウントへ進む",redBtnSr:"ここを押してShadowrocketアカウントへ進む",
+  gKicker:"ステップガイド",gTitle:"サインインとゲームのダウンロード方法",gSub:"アカウントを使用する前に、次の3つの手順を正確に行ってください。",
+  gS1T:"App Storeを開く",gS1D:"ガイドを読んだ後、ページ下部からアカウントを取得し、App Store内のみでサインインしてください。",
+  gS2T:"ゲーム名を検索",gS2D:"検索バーからアプリ名を直接検索してください。<strong>購入済み</strong>を開く必要はありません。",
+  gS3T:"ダウンロード後にサインアウト",gS3D:"価格が表示されたままの場合は、意図しない課金を防ぐため確定前に確認してください。ダウンロード完了後、<strong>App Storeからアカウントをサインアウト</strong>してください。",
+  sesActive:"セッション有効",
+  sesRem:(m,s)=>`残り ${m}:${String(s).padStart(2,"0")}`,
+  sesExpired:"期限切れ",
+  sesNotice:"🔒 アカウントとパスワードは非表示です。各コピーボタンに30秒の待機時間があります。コピー時に通知を読んで同意してください。",
+  sesApple:"Appleアカウント",sesPass:"パスワード",
+  sesCopy:"コピー",sesWait:(s)=>`${s}秒待機`,sesCopied:"コピー完了！",
+  sesFooter:"⏳ リンクは開いてから10分間有効です。期限切れの場合は公式ページから新しいリンクを取得してください。",
+  sesModalTitle:"コピー通知",
+  sesModalDesc:"App Store内のみでサインインし、ダウンロード後すぐにサインアウトしてください。同意してコピーしますか？",
+  sesCancel:"キャンセル",sesConfirm:"同意してコピー",
+  supKicker:"お困りですか？",
+  supTitle:"お問い合わせと通知",
+  supDesc:"エラーや最新情報が必要ですか？Kurd0oのDiscordに参加してください。TikTokでもコンテンツをご覧いただけます。",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
+  as1:"<strong>ステップ1：</strong> iPhone/iPadでApp Storeを開きます。",
+  as2:"<strong>ステップ2：</strong> 右上のアバターをタップし、下へスクロールして古いアカウントから<strong>サインアウト</strong>します。",
+  as3:"<strong>ステップ3：</strong> Kurd0oから案内されたIDとパスワードを入力します。",
+  as4:"<strong>ステップ4：</strong> セキュリティ確認が出たら「その他のオプション」→「アップグレードしない」を選択します。",
+  as5:"<strong>ステップ5：</strong> ゲーム/アプリを検索してダウンロードし、完了したらアバターから<strong>サインアウト</strong>します。",
+  commTitle:"Kurd0oコミュニティ",
+  commDesc:"詳しいお知らせや毎日の無料ID通知を受け取るには、今すぐKurd0oチャンネルに参加してください！！！",
+  commTikTok:'🎵 TikTok: <a href="https://www.tiktok.com/@mziri0y1?_r=1&_t=ZS-9BXaUbAZJQL" target="_blank" rel="noopener noreferrer" class="blue">@mziri0y1</a>',
+  commDiscord:'🎮 Discord: <a href="https://discord.gg/Tn4U989mmz" target="_blank" rel="noopener noreferrer" class="blue">Discordに参加</a>',
+  commTelegram:'✈️ Telegram: <a href="https://t.me/Kurd0o1" target="_blank" rel="noopener noreferrer" class="blue">@Kurd0o1</a>',
+  commShop:'🛍️ 購入 / ストア: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
+}
+};
 
-            ['ku', 'ar', 'en'].forEach(l => {
-                const btn = document.getElementById('btn-' + l);
-                btn.className = (l === lang) 
-                    ? "px-2.5 py-1 rounded-lg font-bold bg-amber-500 text-slate-950 transition"
-                    : "px-2.5 py-1 rounded-lg text-slate-300 hover:text-amber-400 transition";
-            });
+function saveGuideSessionState(appType, endAt){
+  try{
+    localStorage.setItem(GUIDE_PERSIST_KEY, JSON.stringify({
+      app: appType || "minecraft",
+      endAt: endAt
+    }));
+  }catch{}
+}
 
-            document.getElementById('t-subtitle').innerText = t.subtitle;
-            document.getElementById('t-ch-title').innerText = t.chTitle;
-            document.getElementById('t-condition-alert').innerText = t.conditionAlert;
-            document.getElementById('t-ch-desc').innerText = t.chDesc;
-            document.getElementById('t-step1').innerText = t.step1;
-            document.getElementById('t-step2').innerText = t.step2;
-            document.getElementById('t-step3').innerText = t.step3;
-            document.getElementById('t-prog-label').innerText = t.progLabel;
-            document.getElementById('t-unlock-btn').innerText = t.unlockBtn;
-            document.getElementById('hint-text').innerText = t.hintText;
-            document.getElementById('t-vault-title').innerText = t.vaultTitle;
-            document.getElementById('t-buy-title').innerText = t.buyTitle;
-        }
+function clearGuideSessionState(){
+  try{
+    localStorage.removeItem(GUIDE_PERSIST_KEY);
+  }catch{}
+}
 
-        let channelState = { 1: 'pending', 2: 'pending', 3: 'pending', 4: 'pending', 5: 'pending' };
+function getValidGuideSessionState(){
+  try{
+    const raw = JSON.parse(localStorage.getItem(GUIDE_PERSIST_KEY) || "null");
+    if(!raw || !raw.endAt) return null;
+    if(Date.now() < Number(raw.endAt)){
+      return {
+        app: raw.app === "shadowrocket" ? "shadowrocket" : "minecraft",
+        endAt: Number(raw.endAt)
+      };
+    }
+    clearGuideSessionState();
+    return null;
+  }catch{
+    return null;
+  }
+}
 
-        function updateProgress() {
-            let doneCount = Object.values(channelState).filter(val => val === 'done').length;
-            let percent = (doneCount / 5) * 100;
-            document.getElementById('progress-bar').style.width = percent + '%';
-            document.getElementById('progress-text').innerText = percent + '% (' + doneCount + '/5)';
-            
-            if (doneCount === 5) {
-                document.getElementById('unlock-btn-container').classList.remove('hidden');
-                document.getElementById('hint-text').style.display = 'none';
-            }
-        }
+function saveCopyCooldownMap(mapObj){
+  try{
+    localStorage.setItem(COPY_COOLDOWN_KEY, JSON.stringify(mapObj));
+  }catch{}
+}
 
-        function startTimer(channelNum) {
-            if (channelState[channelNum] !== 'pending') return;
-            channelState[channelNum] = 'counting';
-            const btn = document.getElementById('ch-' + channelNum);
-            const statusDiv = document.getElementById('status-' + channelNum);
-            btn.classList.add('border-amber-500/60', 'bg-amber-950/20');
-            
-            let seconds = 5;
-            statusDiv.innerHTML = `<span class="text-[11px] text-amber-400 font-medium">(${seconds}s)</span> <i class="fa-solid fa-spinner fa-spin text-amber-400 text-xs"></i>`;
+function clearCopyCooldowns(){
+  try{
+    localStorage.removeItem(COPY_COOLDOWN_KEY);
+  }catch{}
+}
 
-            const interval = setInterval(() => {
-                seconds--;
-                if (seconds > 0) {
-                    statusDiv.innerHTML = `<span class="text-[11px] text-amber-400 font-medium">(${seconds}s)</span> <i class="fa-solid fa-spinner fa-spin text-amber-400 text-xs"></i>`;
-                } else {
-                    clearInterval(interval);
-                    channelState[channelNum] = 'done';
-                    btn.classList.remove('border-amber-500/60', 'bg-amber-950/20');
-                    btn.classList.add('border-emerald-500/60', 'bg-emerald-950/20');
-                    statusDiv.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>`;
-                    updateProgress();
-                }
-            }, 1000);
-        }
+function getStoredCopyCooldowns(){
+  try{
+    const raw = JSON.parse(localStorage.getItem(COPY_COOLDOWN_KEY) || "{}");
+    const now = Date.now();
+    const cleaned = {};
+    const seconds = {email:0, password:0};
+    ["email", "password"].forEach((key)=>{
+      const endAt = Number(raw[key] || 0);
+      if(endAt > now){
+        cleaned[key] = endAt;
+        seconds[key] = Math.ceil((endAt - now) / 1000);
+      }
+    });
+    saveCopyCooldownMap(cleaned);
+    return seconds;
+  }catch{
+    return {email:0, password:0};
+  }
+}
 
-        function showAccounts() {
-            localStorage.setItem('vault_unlocked_time', Date.now());
-            document.getElementById('channels-section').style.display = 'none';
-            document.getElementById('accounts-section').classList.remove('hidden');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+function getJoinedMap(){
+  try{
+    const raw=JSON.parse(localStorage.getItem(STORAGE_JOIN_KEY)||"{}");
+    const now=Date.now();
+    const cleaned={};
+    for(const k of REQUIRED_TARGETS){
+      if(raw[k] && (now - raw[k]) < FIVE_MINUTES_MS){
+        cleaned[k]=raw[k];
+      }
+    }
+    localStorage.setItem(STORAGE_JOIN_KEY,JSON.stringify(cleaned));
+    return cleaned;
+  }catch{
+    return {};
+  }
+}
 
-        window.addEventListener('DOMContentLoaded', () => {
-            const unlockedTime = localStorage.getItem('vault_unlocked_time');
-            const tenMinutes = 10 * 60 * 1000;
+function markJoined(target){
+  const map=getJoinedMap();
+  map[target]=Date.now();
+  localStorage.setItem(STORAGE_JOIN_KEY,JSON.stringify(map));
+  updateJoinButtonsUI();
+}
 
-            if (unlockedTime) {
-                const currentTime = Date.now();
-                const timePassed = currentTime - parseInt(unlockedTime);
+function updateJoinButtonsUI(){
+  const lang=localStorage.getItem(LANG_KEY)||"en";
+  const d=T[lang]||T.en;
+  const map=getJoinedMap();
 
-                if (timePassed < tenMinutes) {
-                    document.getElementById('channels-section').style.display = 'none';
-                    document.getElementById('accounts-section').classList.remove('hidden');
-                } else {
-                    localStorage.removeItem('vault_unlocked_time');
-                }
-            }
-        });
+  document.querySelectorAll(".kurd-join-btn").forEach(btn=>{
+    const target=btn.getAttribute("data-target");
+    const statusEl=btn.querySelector(".join-status");
+    if(!statusEl)return;
 
-        function copyText(elementId, btn) {
-            const text = document.getElementById(elementId).innerText;
-            const t = translations[currentLang];
-            const spanTxt = btn.querySelector('.copy-txt');
-            navigator.clipboard.writeText(text).then(() => {
-                spanTxt.innerText = t.copiedText;
-                setTimeout(() => { spanTxt.innerText = t.copyBtn; }, 1500);
-            });
-        }
+    btn.classList.remove("joined");
 
-        const liveMessages = [
-            "أحد الزوار فتح خزنة الحسابات الآن!",
-            "مستخدم جديد حصل على تفاصيل حساب آيفون بنجاح",
-            "تم تحديث بيانات الحسابات قبل قليل",
-            "انضم الآن إلى القنوات وسيرفر الديسكورد لتحصل على أحدث الحسابات"
-        ];
-        setInterval(() => {
-            const toast = document.getElementById('live-toast');
-            const msgEl = document.getElementById('toast-msg');
-            msgEl.innerText = liveMessages[Math.floor(Math.random() * liveMessages.length)];
-            
-            toast.classList.remove('translate-y-24', 'opacity-0');
-            setTimeout(() => {
-                toast.classList.add('translate-y-24', 'opacity-0');
-            }, 4000);
-        }, 12000);
+    if(countdowns[target]){
+      statusEl.textContent=d.waitText(countdowns[target]);
+      statusEl.style.color="#d97706";
+    }else if(map[target]){
+      statusEl.textContent=d.joinedText||"✓ Joined";
+      statusEl.style.color="#15803d";
+      btn.classList.add("joined");
+    }else{
+      statusEl.textContent="↗";
+      statusEl.style.color="";
+    }
+  });
 
-        let crownClicks = 0;
-        function adminClick() {
-            crownClicks++;
-            if (crownClicks >= 5) {
-                document.getElementById('admin-panel').classList.add('hidden');
-                crownClicks = 0;
-            }
-        }
-        function unlockDirectly() {
-            showAccounts();
-            document.getElementById('admin-panel').classList.add('hidden');
-        }
-    </script>
+  const allDone=REQUIRED_TARGETS.every(t=>Boolean(map[t]));
+  const redBox=document.getElementById("kurd0o-red-account-box");
+  if(redBox){
+    redBox.classList.toggle("show",allDone);
+  }
+}
+
+function handleJoinTarget(target,url){
+  window.open(url,"_blank","noopener,noreferrer");
+  if(timers[target])return;
+
+  let sec=5;
+  countdowns[target]=sec;
+  updateJoinButtonsUI();
+
+  timers[target]=setInterval(()=>{
+    sec-=1;
+    if(sec<=0){
+      clearInterval(timers[target]);
+      delete timers[target];
+      delete countdowns[target];
+      markJoined(target);
+    }else{
+      countdowns[target]=sec;
+      updateJoinButtonsUI();
+    }
+  },1000);
+}
+
+function openJoinPageView(appType){
+  currentSelectedApp=appType;
+  clearGuideSessionState();
+  clearCopyCooldowns();
+  const lang=localStorage.getItem(LANG_KEY)||"en";
+  const d=T[lang]||T.en;
+
+  document.getElementById("kurd0o-main-site-content").style.display="none";
+  document.getElementById("kurd0o-step-guide-view").classList.remove("active");
+  const view=document.getElementById("kurd0o-join-page-view");
+  view.classList.add("active");
+
+  document.getElementById("join-page-title").textContent=appType==="shadowrocket"?"Shadowrocket":"Minecraft";
+  document.getElementById("join-page-sub").textContent=appType==="shadowrocket"?d.modalSr:d.modalMc;
+  document.getElementById("kurd0o-red-account-btn").textContent=appType==="shadowrocket"?d.redBtnSr:d.redBtnMc;
+
+  updateJoinButtonsUI();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function openStepGuideView(isRestore){
+  document.getElementById("kurd0o-main-site-content").style.display="none";
+  document.getElementById("kurd0o-join-page-view").classList.remove("active");
+  document.getElementById("kurd0o-step-guide-view").classList.add("active");
+  if(!isRestore){
+    resetSessionTimer();
+  }else{
+    updateSessionTimerUI();
+  }
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function backToJoinView(){
+  clearGuideSessionState();
+  clearCopyCooldowns();
+  document.getElementById("kurd0o-step-guide-view").classList.remove("active");
+  document.getElementById("kurd0o-join-page-view").classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function backToMainSiteView(){
+  clearGuideSessionState();
+  clearCopyCooldowns();
+  document.getElementById("kurd0o-join-page-view").classList.remove("active");
+  document.getElementById("kurd0o-step-guide-view").classList.remove("active");
+  document.getElementById("kurd0o-main-site-content").style.display="block";
+}
+
+function resetSessionTimer(){
+  sessionEndAt=Date.now()+SESSION_DURATION_MS;
+  saveGuideSessionState(currentSelectedApp, sessionEndAt);
+  updateSessionTimerUI();
+}
+
+function updateSessionTimerUI(){
+  const lang=localStorage.getItem(LANG_KEY)||"en";
+  const d=T[lang]||T.en;
+  const timerEl=document.getElementById("ses-timer-txt");
+  const guideActive=document.getElementById("kurd0o-step-guide-view").classList.contains("active");
+
+  const diffSec=Math.max(0,Math.floor((sessionEndAt-Date.now())/1000));
+  if(diffSec<=0){
+    if(timerEl)timerEl.textContent=d.sesExpired;
+    if(guideActive){
+      clearGuideSessionState();
+      clearCopyCooldowns();
+      backToMainSiteView();
+    }
+  }else{
+    if(timerEl){
+      const mins=Math.floor(diffSec/60);
+      const secs=diffSec%60;
+      timerEl.textContent=d.sesRem(mins,secs);
+    }
+  }
+}
+
+function updateCredButtonsUI(){
+  const lang=localStorage.getItem(LANG_KEY)||"en";
+  const d=T[lang]||T.en;
+
+  document.querySelectorAll(".cred-copy-btn").forEach(btn=>{
+    const type=btn.getAttribute("data-cred");
+    const lbl=btn.querySelector(".copy-btn-label");
+    const rem=copyCooldowns[type]||0;
+    if(rem>0){
+      btn.disabled=true;
+      if(lbl)lbl.textContent=d.sesWait(rem);
+    }else{
+      btn.disabled=false;
+      if(lbl)lbl.textContent=d.sesCopy;
+    }
+  });
+}
+
+function handleCredCopyClick(type){
+  if((copyCooldowns[type]||0)>0)return;
+  pendingCredType=type;
+  document.getElementById("kurd0o-copy-modal").classList.add("open");
+}
+
+function closeCredModal(){
+  pendingCredType=null;
+  document.getElementById("kurd0o-copy-modal").classList.remove("open");
+}
+
+function runCooldownTicker(type, endAt){
+  if(copyIntervals[type])clearInterval(copyIntervals[type]);
+
+  const tick = ()=>{
+    const remSec = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+    copyCooldowns[type] = remSec;
+    if(remSec <= 0){
+      clearInterval(copyIntervals[type]);
+      delete copyIntervals[type];
+      try{
+        const map = JSON.parse(localStorage.getItem(COPY_COOLDOWN_KEY) || "{}");
+        delete map[type];
+        saveCopyCooldownMap(map);
+      }catch{}
+    }
+    updateCredButtonsUI();
+  };
+
+  tick();
+  if(Date.now() < endAt){
+    copyIntervals[type] = setInterval(tick, 500);
+  }
+}
+
+function startCredCooldown(type){
+  const endAt = Date.now() + COPY_COOLDOWN_SEC * 1000;
+  let currentStored = {};
+  try{
+    currentStored = JSON.parse(localStorage.getItem(COPY_COOLDOWN_KEY) || "{}");
+  }catch{}
+  currentStored[type] = endAt;
+  saveCopyCooldownMap(currentStored);
+  runCooldownTicker(type, endAt);
+}
+
+function restoreCredCooldowns(){
+  let raw = {};
+  try{
+    raw = JSON.parse(localStorage.getItem(COPY_COOLDOWN_KEY) || "{}");
+  }catch{}
+  const initialSec = getStoredCopyCooldowns();
+  ["email", "password"].forEach((type)=>{
+    if(initialSec[type] > 0 && raw[type]){
+      runCooldownTicker(type, Number(raw[type]));
+    }else{
+      copyCooldowns[type] = 0;
+    }
+  });
+  updateCredButtonsUI();
+}
+
+function confirmCredCopy(){
+  const type=pendingCredType;
+  closeCredModal();
+  if(!type)return;
+
+  const acc=ACCOUNTS_DATA[currentSelectedApp]||ACCOUNTS_DATA.minecraft;
+  const value=acc[type]||"";
+  if(value && navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(value).catch(()=>{});
+  }
+
+  const lang=localStorage.getItem(LANG_KEY)||"en";
+  const d=T[lang]||T.en;
+  const btn=document.querySelector(`.cred-copy-btn[data-cred="${type}"]`);
+  const lbl=btn?btn.querySelector(".copy-btn-label"):null;
+  if(lbl)lbl.textContent=d.sesCopied;
+
+  startCredCooldown(type);
+}
+
+function toggleDrawer(e){
+  e.stopPropagation();
+  document.getElementById("lang-dropdown").classList.remove("show");
+  document.getElementById("side-drawer").classList.toggle("show");
+}
+
+function toggleLangDropdown(e){
+  e.stopPropagation();
+  document.getElementById("side-drawer").classList.remove("show");
+  document.getElementById("lang-dropdown").classList.toggle("show");
+}
+
+document.addEventListener("click",()=>{
+  document.getElementById("side-drawer").classList.remove("show");
+  document.getElementById("lang-dropdown").classList.remove("show");
+});
+
+function setHtml(id,val){
+  const el=document.getElementById(id);
+  if(el)el.innerHTML=val;
+}
+
+function applyLang(lang){
+  const d=T[lang]||T.en;
+  localStorage.setItem(LANG_KEY,lang);
+  document.documentElement.lang=lang;
+  document.documentElement.dir=d.dir;
+  document.getElementById("lang-current").textContent=LANG_LABELS[lang]||"🇬🇧 EN ⌄";
+  document.getElementById("lang-dropdown").classList.remove("show");
+
+  setHtml("drawer-buy",d.buy);
+  setHtml("drawer-contact",d.contact);
+  setHtml("page-h1",d.h1);
+  setHtml("p-1",d.p1);
+  setHtml("p-2",d.p2);
+  setHtml("p-3",d.p3);
+  setHtml("c2-title-text",d.c2title);
+  setHtml("c2-p1",d.c2p1);
+  setHtml("c2-p2",d.c2p2);
+  setHtml("c2-li1",d.c2li1);
+  setHtml("c2-li2",d.c2li2);
+  setHtml("c2-li3",d.c2li3);
+  setHtml("c2-p3",d.c2p3);
+  setHtml("c3-surv-title",d.survTitle);
+  setHtml("c3-surv-p1",d.survP1);
+  setHtml("c3-surv-p2",d.survP2);
+  setHtml("c3-tip-box",d.tipBox);
+  setHtml("c3-crea-title",d.creaTitle);
+  setHtml("c3-crea-p1",d.creaP1);
+  setHtml("c3-crea-li1",d.creaLi1);
+  setHtml("c3-crea-li2",d.creaLi2);
+  setHtml("c4-dev-title",d.devTitle);
+  setHtml("c4-dev-p1",d.devP1);
+  setHtml("c4-dev-p2",d.devP2);
+  setHtml("c4-mkt-title",d.mktTitle);
+  setHtml("c4-mkt-p1",d.mktP1);
+  setHtml("c4-mkt-li1",d.mktLi1);
+  setHtml("c4-mkt-li2",d.mktLi2);
+  setHtml("c4-mkt-li3",d.mktLi3);
+  setHtml("c5-warn-full",d.warnFull);
+  setHtml("c5-sr-title",d.srTitle);
+  setHtml("c5-app-btn",d.appBtn);
+  setHtml("c5-stat-rating-lbl",d.ratingLbl);
+  setHtml("c5-stat-age-lbl",d.ageLbl);
+  setHtml("c5-stat-age-sub",d.ageSub);
+  setHtml("c5-stat-rank-lbl",d.rankLbl);
+  setHtml("c5-stat-rank-sub",d.rankSub);
+  setHtml("c5-whats-new",d.whatsNew);
+  setHtml("c5-sr-p1",d.srP1);
+  setHtml("c5-sr-p2",d.srP2);
+  setHtml("c5-sr-li1",d.srLi1);
+  setHtml("c5-sr-li2",d.srLi2);
+  setHtml("c6-sr-li1",d.srLi3);
+  setHtml("c6-sr-li2",d.srLi4);
+  setHtml("c6-id-title",d.idTitle);
+  setHtml("c6-id-p1",d.idP1);
+  setHtml("btn-mc-free",d.mcBtn);
+  setHtml("btn-sr-free",d.srBtn);
+  setHtml("guide-appstore-title",d.guideTitle);
+  setHtml("strict-id-warning",d.strictWarning);
+  setHtml("as-step-1",d.as1);
+  setHtml("as-step-2",d.as2);
+  setHtml("as-step-3",d.as3);
+  setHtml("as-step-4",d.as4);
+  setHtml("as-step-5",d.as5);
+  setHtml("comm-title",d.commTitle);
+  setHtml("comm-desc",d.commDesc);
+  setHtml("comm-li-tiktok",d.commTikTok);
+  setHtml("comm-li-discord",d.commDiscord);
+  setHtml("comm-li-telegram",d.commTelegram);
+  setHtml("comm-li-shop",d.commShop);
+  setHtml("btn-back-site",d.backSite);
+  setHtml("btn-back-join",d.backJoin);
+
+  setHtml("g-kicker",d.gKicker);
+  setHtml("g-title",d.gTitle);
+  setHtml("g-sub",d.gSub);
+  setHtml("g-s1-t",d.gS1T);
+  setHtml("g-s1-d",d.gS1D);
+  setHtml("g-s2-t",d.gS2T);
+  setHtml("g-s2-d",d.gS2D);
+  setHtml("g-s3-t",d.gS3T);
+  setHtml("g-s3-d",d.gS3D);
+
+  setHtml("ses-active-txt",d.sesActive);
+  setHtml("ses-notice-txt",d.sesNotice);
+  setHtml("ses-apple-lbl",d.sesApple);
+  setHtml("ses-pass-lbl",d.sesPass);
+  setHtml("ses-footer-txt",d.sesFooter);
+  setHtml("cred-modal-title",d.sesModalTitle);
+  setHtml("cred-modal-desc",d.sesModalDesc);
+  setHtml("cred-modal-cancel",d.sesCancel);
+  setHtml("cred-modal-confirm",d.sesConfirm);
+
+  setHtml("sup-kicker",d.supKicker);
+  setHtml("sup-title",d.supTitle);
+  setHtml("sup-desc",d.supDesc);
+  setHtml("sup-discord-txt",d.supDiscord);
+  setHtml("sup-tiktok-txt",d.supTikTok);
+
+  if(document.getElementById("kurd0o-join-page-view").classList.contains("active")){
+    document.getElementById("join-page-sub").textContent=currentSelectedApp==="shadowrocket"?d.modalSr:d.modalMc;
+    document.getElementById("kurd0o-red-account-btn").textContent=currentSelectedApp==="shadowrocket"?d.redBtnSr:d.redBtnMc;
+  }
+  updateJoinButtonsUI();
+  updateSessionTimerUI();
+  updateCredButtonsUI();
+}
+
+const savedGuide=getValidGuideSessionState();
+if(savedGuide){
+  currentSelectedApp=savedGuide.app;
+  sessionEndAt=savedGuide.endAt;
+}
+
+setInterval(updateSessionTimerUI,1000);
+applyLang(localStorage.getItem(LANG_KEY)||"en");
+restoreCredCooldowns();
+
+if(savedGuide){
+  openStepGuideView(true);
+}
+</script>
 </body>
 </html>
