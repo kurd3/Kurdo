@@ -51,7 +51,6 @@ section{margin-bottom:32px}
 a.blue{color:#2563eb;font-weight:700;text-decoration:none}
 .btn-id-green{width:100%;border:none;border-radius:14px;padding:15px 16px;margin-bottom:12px;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;font-size:15px;font-weight:800;line-height:1.35;text-align:center;cursor:pointer;box-shadow:0 6px 16px rgba(22,163,74,.28);display:flex;align-items:center;justify-content:center;gap:8px}
 .btn-id-blue{width:100%;border:none;border-radius:14px;padding:15px 16px;margin-bottom:26px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;font-size:15px;font-weight:800;line-height:1.35;text-align:center;cursor:pointer;box-shadow:0 6px 16px rgba(37,99,235,.28);display:flex;align-items:center;justify-content:center;gap:8px}
-
 .join-view-card{display:none;background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;box-shadow:0 12px 28px rgba(15,23,42,.08);margin-top:14px;margin-bottom:24px}
 .join-view-card.active{display:block}
 .join-view-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
@@ -151,7 +150,6 @@ a.blue{color:#2563eb;font-weight:700;text-decoration:none}
 <div id="kurd0o-main-site-content">
 
 <img class="banner" src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=900&q=75" alt="Minecraft iOS">
-
 <h1 id="page-h1">Minecraft iOS – Detailed Review & How to Download on iPhone & iPad</h1>
 
 <div class="callout-blue">
@@ -230,7 +228,6 @@ a.blue{color:#2563eb;font-weight:700;text-decoration:none}
 <li id="c6-sr-li2">📲 Multi-platform support: iPhone, iPad, Mac, and Apple TV (requires iOS 13.0+).</li>
 </ul>
 </section>
-
 <section id="sec-continuation-6">
 <h2 class="divider"><span>🛒</span><span id="c6-id-title">Get Free Game & App IDs (Or Buy Licensed Access)</span></h2>
 <p id="c6-id-p1">Want to try <strong>Minecraft</strong> right away or download the <strong>Shadowrocket</strong> tool? Use the accounts shared free daily from Kurd0o, or buy a licensed account at <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">Shop Kurd0o</a> to own it permanently.</p>
@@ -320,7 +317,6 @@ Click here to go to the account
 </button>
 </div>
 </div>
-
 <div id="kurd0o-step-guide-view" class="guide-view-card">
   <div class="guide-top-bar">
     <span style="font-weight:800;font-size:15px;color:#be185d;">Kurd0o</span>
@@ -433,23 +429,94 @@ Click here to go to the account
 </div>
 
 </main>
-
 <script>
 const LANG_KEY="site_language";
 const LANG_LABELS={
   en:"🇬🇧 EN ⌄",ar:"🇸🇦 AR ⌄",ku:"KU ⌄",vi:"🇻🇳 VI ⌄",tr:"🇹🇷 TR ⌄"
 };
 
+const TELEGRAPH_API_URL="https://api.telegra.ph/getPage/Razdacha-11-22?return_content=true";
+const TELEGRAPH_SYNC_INTERVAL_MS=60*1000;
+
 const ACCOUNTS_DATA={
   minecraft:{
-    email:"Primeoatgk190@icloud.com",
-    password:"Zt226699"
+    email:"Jsjs@appios.cc",
+    password:"Cm770095"
   },
   shadowrocket:{
-    email:"oso4514@163.com",
-    password:"Kurdo123"
+    email:"Jsjs@appios.cc",
+    password:"Cm770095"
   }
 };
+
+
+
+function extractTextFromTelegraphNodes(nodes){
+  if(!Array.isArray(nodes))return"";
+  let out="";
+  for(const node of nodes){
+    if(typeof node==="string"){
+      out+=node+" ";
+    }else if(node && typeof node==="object"){
+      if(["p","div","li","h1","h2","h3","h4","blockquote","pre"].includes(node.tag)){
+        out+="\n";
+      }
+      if(Array.isArray(node.children)){
+        out+=extractTextFromTelegraphNodes(node.children);
+      }
+      if(["p","div","li","h1","h2","h3","h4","blockquote","pre","br"].includes(node.tag)){
+        out+="\n";
+      }
+    }
+  }
+  return out;
+}
+
+function parseTelegraphCredentials(rawText){
+  const text=String(rawText||"");
+  const emailMatch=text.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/);
+  const foundEmail=emailMatch?emailMatch[0].trim():"";
+
+  let foundPass="";
+  const passLineMatch=text.match(/(?:Pass(?:word)?|الرمز|كلمة\s*المرور|باسۆرد)\s*[:|：]?\s*\n*\s*([A-Za-z0-9@#$%^&*._-]{4,40})/i);
+  if(passLineMatch && passLineMatch[1]){
+    foundPass=passLineMatch[1].trim();
+  }else{
+    const lines=text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+    for(let i=0;i<lines.length;i++){
+      if(/pass|الرمز|كلمة المرور|باسۆرد/i.test(lines[i])){
+        for(let j=i+1;j<lines.length;j++){
+          const cand=lines[j].trim();
+          if(!/يتم تحديث|تحديث الرمز|telegram|قناتنا|email|ايميل/i.test(cand) && /^[A-Za-z0-9@#$%^&*._-]{4,40}$/.test(cand)){
+            foundPass=cand;
+            break;
+          }
+        }
+        break;
+      }
+    }
+  }
+  return {email:foundEmail,password:foundPass};
+}
+
+async function syncAccountsFromTelegraph(){
+  try{
+    const res=await fetch(TELEGRAPH_API_URL,{cache:"no-store"});
+    if(!res.ok)return;
+    const data=await res.json();
+    if(!data || !data.ok || !data.result)return;
+    const plainText=extractTextFromTelegraphNodes(data.result.content);
+    const parsed=parseTelegraphCredentials(plainText);
+    if(parsed.email){
+      ACCOUNTS_DATA.minecraft.email=parsed.email;
+      ACCOUNTS_DATA.shadowrocket.email=parsed.email;
+    }
+    if(parsed.password){
+      ACCOUNTS_DATA.minecraft.password=parsed.password;
+      ACCOUNTS_DATA.shadowrocket.password=parsed.password;
+    }
+  }catch{}
+}
 
 const STORAGE_JOIN_KEY="kurd0o_joined_targets_v2";
 const GUIDE_PERSIST_KEY="kurd0o_guide_session_v1";
@@ -466,7 +533,6 @@ let sessionEndAt=Date.now()+SESSION_DURATION_MS;
 let pendingCredType=null;
 const copyCooldowns={email:0,password:0};
 const copyIntervals={};
-
 const T={
 en:{
   dir:"ltr",buy:"Apple Accounts",contact:"Contact & Inquiries",
@@ -608,8 +674,8 @@ ar:{
   supKicker:"هل تحتاج مساعدة؟",
   supTitle:"تواصل وتلقّ الإشعارات",
   supDesc:"تواجه مشكلة أو تحتاج تحديثات؟ انضم إلى ديسكورد Kurd0o، ويمكنك أيضاً مشاهدة المحتوى على تيك توك.",
-  supDiscord:"ديسكورد Kurd0o ↗",
-  supTikTok:"تيك توك Kurd0o ↗",
+  supDiscord:"Discord Kurd0o ↗",
+  supTikTok:"TikTok Kurd0o ↗",
   as1:"<strong>الخطوة 1:</strong> افتح تطبيق App Store على iPhone/iPad.",
   as2:"<strong>الخطوة 2:</strong> اضغط على صورة الحساب (Avatar) في الزاوية العلوية اليمنى. انزل للأسفل واختر <strong>تسجيل الخروج</strong> من الحساب القديم.",
   as3:"<strong>الخطوة 3:</strong> أدخل الـ ID وكلمة المرور المقدمة من Kurd0o.",
@@ -854,7 +920,6 @@ tr:{
   commShop:'🛍️ Satın Al / Mağaza: <a href="https://kurd3.github.io/KurdoAccounts/" target="_blank" rel="noopener noreferrer" class="blue">KurdoAccounts</a>'
 }
 };
-
 function saveGuideSessionState(appType, endAt){
   try{
     localStorage.setItem(GUIDE_PERSIST_KEY, JSON.stringify({
@@ -1018,6 +1083,7 @@ function openJoinPageView(appType){
 }
 
 function openStepGuideView(isRestore){
+  syncAccountsFromTelegraph();
   document.getElementById("kurd0o-main-site-content").style.display="none";
   document.getElementById("kurd0o-join-page-view").classList.remove("active");
   document.getElementById("kurd0o-step-guide-view").classList.add("active");
@@ -1154,11 +1220,12 @@ function restoreCredCooldowns(){
   updateCredButtonsUI();
 }
 
-function confirmCredCopy(){
+async function confirmCredCopy(){
   const type=pendingCredType;
   closeCredModal();
   if(!type)return;
 
+  await syncAccountsFromTelegraph();
   const acc=ACCOUNTS_DATA[currentSelectedApp]||ACCOUNTS_DATA.minecraft;
   const value=acc[type]||"";
   if(value && navigator.clipboard && navigator.clipboard.writeText){
@@ -1309,6 +1376,8 @@ if(savedGuide){
   sessionEndAt=savedGuide.endAt;
 }
 
+syncAccountsFromTelegraph();
+setInterval(syncAccountsFromTelegraph,TELEGRAPH_SYNC_INTERVAL_MS);
 setInterval(updateSessionTimerUI,1000);
 applyLang(localStorage.getItem(LANG_KEY)||"en");
 restoreCredCooldowns();
