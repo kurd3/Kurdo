@@ -435,33 +435,27 @@ const LANG_LABELS={
   en:"🇬🇧 EN ⌄",ar:"🇸🇦 AR ⌄",ku:"KU ⌄",vi:"🇻🇳 VI ⌄",tr:"🇹🇷 TR ⌄"
 };
 
-function parseTelegraphCredentials(rawText){
-  const text=String(rawText||"");
-  const emailMatch=text.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/);
-  const foundEmail=emailMatch?emailMatch[0].trim():"";
-
-  let foundPass="";
-  const passLineMatch=text.match(/(?:Pass(?:word)?|Пароль|الرمز|كلمة\s*المرور|باسۆرد)\s*[:|：]?\s*([^\s\r\n]{4,60})/i);
-  if(passLineMatch && passLineMatch[1]){
-    foundPass=passLineMatch[1].trim();
-  }else{
-    const lines=text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
-    for(let i=0;i<lines.length;i++){
-      if(/pass|пароль|الرمز|كلمة المرور|باسۆرد/i.test(lines[i])){
-        for(let j=i+1;j<lines.length;j++){
-          const cand=lines[j].trim();
-          if(!/يتم تحديث|تحديث الرمز|обновляется|канал|telegram|قناتنا|email|apple id|ايميل/i.test(cand) && /^[^\s]{4,60}$/.test(cand)){
-            foundPass=cand;
-            break;
-          }
-        }
-        break;
-      }
-    }
-  }
+عه
   return {email:foundEmail,password:foundPass};
 }
 
+function parseTelegraphCredentials(rawText){
+  const text=String(rawText||"");
+
+  // 1. استخراج الإيميل
+  const emailMatch=text.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/);
+  const foundEmail=emailMatch?emailMatch[0].trim():"";
+
+  // 2. استخراج الرمز حتى لو كان مقسوماً بوسوم أو أسطر
+  let foundPass="";
+  const afterPass=text.split(/(?:Pass(?:word)?|Пароль|الرمز|كلمة\s*المرور|باسۆرد)\s*[:|：]?\s*/i)[1];
+  if(afterPass){
+    const firstLine=afterPass.split(/\r?\n/)[0].trim();
+    foundPass=firstLine.replace(/\s+/g,"");
+  }
+
+  return {email:foundEmail,password:foundPass};
+}
 
 
 function extractTextFromTelegraphNodes(nodes){
